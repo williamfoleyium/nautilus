@@ -364,7 +364,7 @@ a:hover {
 .contact-left {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 20px;
 }
 
