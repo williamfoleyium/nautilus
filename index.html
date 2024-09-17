@@ -12,13 +12,13 @@
         <div class="logo">
             <img src="./resources/nautilus-logo-alt.png" alt="Logo">
         </div>
-        <h1 class="logo-name">Nautilus</h1>
+        <h1 class="logo-name"><a href="www.nautilusonboarding.com">Nautilus</a></h1>
         <div>
             <ul class="nav-links">
                 <li><a href="#hnw">HNW and Corps</a></li>
                 <li><a href="#hedge-funds">Hedge Funds</a></li>
                 <li><a href="#investment-banks">Investment Banks</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#contact-container">Contact Us</a></li>
             </ul>
         </div>
         <div class="btn-container">
@@ -47,8 +47,8 @@
                 <h1 class="hero-text-2">Front-to-Back toolkit for banking operations</h1>
             </div>
             <div class="btn-container">
-                <button class="btn contact-btn" onclick="location.href=''">Contact Us</button>
-                <button class="btn demo-btn" onclick="location.href='./clientHomePage.html'">Try Demo</button>
+                <button class="btn contact-btn" onclick="location.href='#contact-container'">Contact Us</button>
+                <!-- <button class="btn demo-btn" onclick="location.href='./clientHomePage.html'">Try Demo</button> -->
             </div>
         </div>
         <div class="pic-container">
@@ -90,16 +90,16 @@
             <div class="sign-up-wrapper">
                 <div class="client-box">
                     <h3 class="client-title">Looking to Join a Bank?</h3>
-                        <button class="btn client-button" onclick="location.href='clientSignupPage.html'">Sign Up</button>
+                        <button class="btn client-button" onclick="location.href='./clientPages/signUp-Client.html'">Sign Up</button>
                 </div>
                 <div class="investment-bank-box"> <!--formally ib-box-->
                     <h3 class="investment-bank-title">For Banks and Institutions</h3>
-                    <button class="btn investment-bank-button" onclick="location.href='investmentBankSignupPage.html'">Sign Up</button>
+                    <button class="btn investment-bank-button" onclick="location.href='./ibPages/investmentBankSignupPage.html'">Sign Up</button>
                 </div>
             </div>
         </div>
     </section>    
-    <section class="contact-container">
+    <section id="contact-container">
         <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
             <div class="contact-left-title">
                 <h2>Get in touch</h2>

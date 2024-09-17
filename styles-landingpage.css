@@ -354,7 +354,7 @@ a:hover {
   
 /* CONTACT SECTION */
 
-.contact-container {
+#contact-container {
   background: linear-gradient(#f0f0ce, #fafafa);
   display: flex;
   align-items: center;
