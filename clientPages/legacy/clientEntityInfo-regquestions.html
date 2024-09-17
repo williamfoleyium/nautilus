@@ -1,0 +1,229 @@
+<style>
+    .entity-info-page {
+      background-color: #fff;
+      padding: 0 80px 0 0;
+      overflow: hidden;
+    }
+    
+    .page-layout {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .sidebar {
+      width: 19%;
+    }
+    
+    .nav-bar {
+      background-color: #e1da9e;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: #000;
+      width: 100%;
+      padding: 23px 26px;
+      font: 400 16px Inter, sans-serif;
+    }
+    
+    .nav-logo {
+      aspect-ratio: 1;
+      object-fit: contain;
+      width: 100%;
+      border-radius: 76px;
+    }
+    
+    .nav-item {
+      font-size: 24px;
+      margin-top: 26px;
+    }
+    
+    .nav-sub-item {
+      margin: 28px 0 0 24px;
+    }
+    
+    .nav-account {
+      font-size: 20px;
+      margin: 318px 0 0 13px;
+    }
+    
+    .nav-sign-out {
+      font-size: 20px;
+      margin: 25px 0 0 13px;
+    }
+    
+    .main-content {
+      width: 81%;
+      margin-left: 20px;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      font-family: Inter, sans-serif;
+      color: #000;
+      font-weight: 400;
+      margin: auto 0;
+    }
+    
+    .page-title {
+      font-size: 40px;
+      align-self: flex-start;
+    }
+    
+    .regulatory-section {
+      display: flex;
+      margin-top: 47px;
+      width: 100%;
+      padding-left: 54px;
+      flex-direction: column;
+      align-items: center;
+      font-size: 26px;
+    }
+    
+    .section-title {
+      font-size: 33px;
+      align-self: flex-start;
+    }
+    
+    .question-group {
+      display: flex;
+      margin-top: 25px;
+      width: 626px;
+      max-width: 100%;
+      gap: 34px;
+      flex-wrap: wrap;
+    }
+    
+    .question-text {
+      flex-grow: 1;
+      width: 340px;
+      margin: auto 0;
+    }
+    
+    .answer-button {
+      text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+      border-radius: 16px;
+      background-color: #fff;
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
+      width: 99px;
+      height: 99px;
+      border: 2px solid #e1da9e;
+      cursor: pointer;
+    }
+    
+    .answer-yes {
+      padding: 0 26px;
+    }
+    
+    .answer-no {
+      padding: 0 32px;
+    }
+    
+    .next-button {
+      border-radius: 20px;
+      background-color: #e1da9e;
+      align-self: flex-end;
+      margin-top: 38px;
+      width: 260px;
+      max-width: 100%;
+      font-size: 32px;
+      padding: 26px 70px;
+      border: 3px solid #e1da9e;
+      cursor: pointer;
+    }
+    
+    @media (max-width: 991px) {
+      .entity-info-page {
+        padding-right: 20px;
+      }
+    
+      .page-layout {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    
+      .sidebar,
+      .main-content {
+        width: 100%;
+      }
+    
+      .nav-bar {
+        margin-top: 33px;
+        padding: 0 20px;
+      }
+    
+      .nav-sub-item,
+      .nav-account,
+      .nav-sign-out {
+        margin-left: 10px;
+      }
+    
+      .nav-account {
+        margin-top: 40px;
+      }
+    
+      .content-wrapper {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    
+      .regulatory-section {
+        max-width: 100%;
+        padding-left: 20px;
+        margin-top: 40px;
+      }
+    
+      .answer-button {
+        padding: 0 20px;
+      }
+    
+      .next-button {
+        padding: 26px 20px;
+      }
+    }
+    </style>
+    
+    <main class="entity-info-page">
+      <div class="page-layout">
+        <aside class="sidebar">
+          <nav class="nav-bar">
+            <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a0d0bfde031f7e570c74a3067d8f96bf978254c97595922d3ec2779b09fab9e?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" class="nav-logo" alt="Company logo" />
+            <a href="#" class="nav-item">Entity Home</a>
+            <a href="#" class="nav-item">Documents</a>
+            <a href="#" class="nav-sub-item">Formation</a>
+            <a href="#" class="nav-sub-item">Financial</a>
+            <a href="#" class="nav-sub-item">Tax</a>
+            <a href="#" class="nav-sub-item">Regulatory</a>
+            <a href="#" class="nav-account">Account</a>
+            <a href="#" class="nav-sign-out">Sign Out</a>
+          </nav>
+        </aside>
+        <section class="main-content">
+          <div class="content-wrapper">
+            <h1 class="page-title">Entity Info</h1>
+            <div class="regulatory-section">
+              <h2 class="section-title">Regulatory Adherence</h2>
+              <form>
+                <div class="question-group">
+                  <label for="cftc-2013" class="question-text">US Person CFTC 2013 Status</label>
+                  <button type="button" class="answer-button answer-yes" id="cftc-2013-yes">Yes</button>
+                  <button type="button" class="answer-button answer-no" id="cftc-2013-no">No</button>
+                </div>
+                <div class="question-group">
+                  <label for="cftc-2020" class="question-text">US Person CFTC 2020 Status</label>
+                  <button type="button" class="answer-button answer-yes" id="cftc-2020-yes">Yes</button>
+                  <button type="button" class="answer-button answer-no" id="cftc-2020-no">No</button>
+                </div>
+                <div class="question-group">
+                  <label for="federal-entity" class="question-text">Are you considered a US Federal Entity?</label>
+                  <button type="button" class="answer-button answer-yes" id="federal-entity-yes">Yes</button>
+                  <button type="button" class="answer-button answer-no" id="federal-entity-no">No</button>
+                </div>
+                <button type="submit" class="next-button">Next</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>

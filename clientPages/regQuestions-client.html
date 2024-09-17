@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautilus Home Page</title>
+    <link rel="stylesheet" href="regQuestionStyle.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="navStyle.css">
+    
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="sidebar">
+            <div class="nav-bar-container">
+                <div class="logo-container">
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                </div>
+                <div>
+                    <ul class="site-links">
+                        <li><a href="./entityProfile.html" class="nav-item">Entity Profile</a></li>
+                        <li><a href="./entityName-client.html" class="nav-subitem">Entity Name</a></li>
+                        <li><a href="./PPOB-client.html" class="nav-subitem">PPOB</a></li>
+                        <li><a href="./coi-client.html" class="nav-subitem">COI</a></li>
+                        <li><a href="./ownerInfo-Client.html" class="nav-subitem">Ownership Info</a></li>
+                        <li><a href="./regQuestions-client.html" class="nav-subitem">Regulatory Questions</a></li>
+                        <li><a href="./docVaultHome.html" class="nav-item">Document Vault</a></li>
+                        <li><a href="./docVaultFormation-client.html" class="nav-subitem">Formation Documents</a></li>
+                        <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
+                        <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
+                        <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                    </ul>
+                </div>
+                <!-- New container for footer items -->
+                <div class="sidebar-footer">
+                    <ul>
+                        <li><a href="" class="nav-footer-item">Account</a></li>
+                        <li><a href="" class="nav-footer-item">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <main class="main-contnet">
+            <div class="entity-info-container">
+                <h1 class="entity-info-title">Entity Info</h1>
+                <h2 class="sub-section-title">Regulatory Adherences</h2>
+                <div class="reg-question-section">
+                    <div class="reg-section-container">
+                        <div class="question">
+                            <div class="reg-text">
+                                <p>US Person CFTC 2013 Status</p>
+                            </div>
+                            <div class="reg-answers">
+                                <button class="btn">YES</button>
+                                <button class="btn">NO</button>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <div class="reg-text">
+                                <p>US Person CFTC 2020 Status</p>
+                            </div>
+                            <div class="reg-answers">
+                                <button class="btn">YES</button>
+                                <button class="btn">NO</button>
+                            </div>
+                        </div>
+                        <div class="question">
+                            <div class="reg-text">
+                                <p>Are you considered a US Federal Entity?</p>
+                            </div>
+                            <div class="reg-answers">
+                                <button class="btn">YES</button>
+                                <button class="btn">NO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="prev-button" onclick="location.href='./ownerInfo-Client.html'">Prev</button>
+                    <button type="submit" class="next-button" onclick="location.href='./entityProfile.html'">Next</button>
+                </div>
+              </div>
+        </main>
+    </div>
+</body>
+</html>
+

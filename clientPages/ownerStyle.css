@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    height:100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    height:100%;
+    display: flex;
+}
+
+.layout-container {
+    display: flex; /* Aligns nav and main side by side */
+    width: 100%; /* Ensures the container takes up the full width */
+    height: 100vh; /* Set layout to take full viewport height */
+}
+
+section {
+    padding-top: 4vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    padding-bottom: 4vh;
+}
+
+
+/* MAIN CONTENT */
+
+.main-content {
+    flex-grow: 1; /* Allows the main content to take up the remaining space */
+    padding: 20px; 
+    overflow-y: auto;
+  }
+
+  .entity-info-container {
+    color: #000;
+    align-self: flex-start;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-left: 3rem;
+    align-items: center;
+  }
+
+.entity-info-container h2 {
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+  .entity-info-form {
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    margin-left: 4rem;
+    padding-left: 80px;
+    flex-direction: column;
+  }
+
+  .name-label {
+    display: flex;
+    margin-top: 1rem;
+    width: 100%;
+    /* padding-left: 80px; */
+    flex-direction: column;
+    font-size: 1.5rem;
+  }
+
+  .name-input {
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin-top: 1rem;
+    width: 415px;
+    max-width: 100%;
+    height: 49px;
+    border: 1px solid #E1DA9E;
+    margin-bottom: 1rem;
+  }
+
+/* IDENTIFICATION SECTION */
+
+.identification-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.upload-container {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+
+.upload-docs-container,
+.upload-photos-container {
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-grow: 1;
+    align-items: center; /* Center items vertically */
+    gap: 1rem;
+    color: #000;
+    font-weight: 400;
+    width: 15rem; 
+    height: 8rem;
+    padding: 1rem 1rem;
+    border: 3px solid #e1da9e;
+}
+
+.text-column {
+    flex:1;
+}
+
+.image-column {
+    display: flex; 
+    align-items: center;
+}
+
+.upload-title, .photo-title {
+    margin-bottom: 1rem;
+}
+
+
+/* ADD OWNER SECTION */
+
+.action-container {
+    display: flex;
+    justify-content: center;
+}
+
+.add-owner-button {
+    border-radius: 15px;
+    background-color: #e1da9e;
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    margin-top: 7px;
+    gap: 12px;
+    font-size: 24px;
+    padding: 14px 16px;
+    border: 2px solid #e1da9e;
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.add-owner-button img {
+    display: block; /* Remove extra space below the image */
+    max-height: 48px; /* Ensure the icon size is consistent */
+}
+
+
+
+  /* NEXT BUTTON */
+  .button-container {
+    display: flex;
+  }
+
+  .next-button, .prev-button {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #B38F48;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 10rem;
+    border-radius: 0.5rem;
+    border: #e1da9e 0.5rem solid;
+    background: white;
+  }
+
+.next-button {
+    margin-left: auto;
+}
+
+  .next-button:hover {
+    cursor:pointer
+  }
+
+  .prev-button:hover {
+    cursor:pointer
+  }
+
+
+
+
+
+
+
+

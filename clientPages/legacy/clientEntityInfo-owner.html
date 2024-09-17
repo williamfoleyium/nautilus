@@ -1,0 +1,480 @@
+<style>
+    .entity-info-ownership {
+      background-color: #fff;
+      padding-right: 67px;
+      overflow: hidden;
+    }
+    
+    .flex-container {
+      gap: 20px;
+      display: flex;
+    }
+    
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 18%;
+    }
+    
+    .nav-bar {
+      background-color: #e1da9e;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: start;
+      color: #000;
+      width: 100%;
+      padding: 23px 26px;
+      font: 400 16px Inter, sans-serif;
+    }
+    
+    .logo {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 76px;
+      align-self: stretch;
+    }
+    
+    .nav-item {
+      font-size: 24px;
+      margin-top: 26px;
+    }
+    
+    .nav-sub-item {
+      margin: 28px 0 0 24px;
+    }
+    
+    .account-item {
+      font-size: 20px;
+      margin: 318px 0 0 13px;
+    }
+    
+    .sign-out-item {
+      font-size: 20px;
+      margin: 25px 0 0 13px;
+    }
+    
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 82%;
+      margin-left: 20px;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      margin-top: 103px;
+      width: 100%;
+      flex-direction: column;
+    }
+    
+    .info-container {
+      width: 770px;
+      max-width: 100%;
+    }
+    
+    .info-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 39%;
+    }
+    
+    .info-section {
+      display: flex;
+      flex-direction: column;
+      font-family: Inter, sans-serif;
+      font-weight: 400;
+    }
+    
+    .section-title {
+      color: #000;
+      font-size: 40px;
+      align-self: start;
+    }
+    
+    .owner-info {
+      display: flex;
+      margin-top: 29px;
+      padding-left: 54px;
+      flex-direction: column;
+      font-size: 24px;
+      color: #5a5a5a;
+    }
+    
+    .owner-info-title {
+      color: #000;
+      font-size: 40px;
+      align-self: start;
+    }
+    
+    .owner-info-item {
+      align-self: center;
+      margin: 58px 0 0 28px;
+    }
+    
+    .input-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 61%;
+      margin-left: 20px;
+    }
+    
+    .input-wrapper {
+      display: flex;
+      margin-top: 147px;
+      flex-grow: 1;
+      flex-direction: column;
+    }
+    
+    .input-field {
+      border-radius: 15px;
+      background-color: #fff;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      height: 55px;
+      border: 1px solid #e1da9e;
+      margin-top: 24px;
+    }
+    
+    .identification-section {
+      align-self: end;
+      display: flex;
+      margin-top: 34px;
+      width: 865px;
+      max-width: 100%;
+      flex-direction: column;
+      align-items: start;
+    }
+    
+    .identification-title {
+      color: #5a5a5a;
+      font: 400 24px Inter, sans-serif;
+    }
+    
+    .upload-container {
+      width: 695px;
+      max-width: 100%;
+      margin: 45px 0 0 47px;
+    }
+    
+    .upload-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 50%;
+    }
+    
+    .upload-box {
+      border-radius: 20px;
+      background-color: #fff;
+      display: flex;
+      flex-grow: 1;
+      align-items: start;
+      gap: 6px;
+      font-family: Inter, sans-serif;
+      color: #000;
+      font-weight: 400;
+      width: 100%;
+      padding: 33px 0 33px 43px;
+      border: 3px solid #e1da9e;
+    }
+    
+    .upload-content {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .upload-title {
+      font-size: 32px;
+      align-self: start;
+    }
+    
+    .upload-description {
+      font-size: 20px;
+      margin-top: 13px;
+    }
+    
+    .upload-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 84px;
+    }
+    
+    .photo-column {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 50%;
+      margin-left: 20px;
+    }
+    
+    .photo-box {
+      border-radius: 20px;
+      background-color: #fff;
+      display: flex;
+      flex-grow: 1;
+      gap: 1px;
+      font-family: Inter, sans-serif;
+      color: #000;
+      font-weight: 400;
+      width: 100%;
+      padding: 25px 47px 11px;
+      border: 3px solid #e1da9e;
+    }
+    
+    .photo-content {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .photo-title {
+      font-size: 32px;
+      align-self: start;
+    }
+    
+    .photo-description {
+      font-size: 20px;
+      margin-top: 5px;
+    }
+    
+    .photo-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 62px;
+      margin: auto 0;
+    }
+    
+    .action-container {
+      align-self: end;
+      display: flex;
+      margin-top: 18px;
+      width: 605px;
+      max-width: 100%;
+      gap: 20px;
+      font-family: Inter, sans-serif;
+      color: #000;
+      font-weight: 400;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .add-owner-btn {
+      border-radius: 15px;
+      background-color: #e1da9e;
+      align-self: start;
+      display: flex;
+      margin-top: 7px;
+      gap: 12px;
+      font-size: 24px;
+      padding: 14px 16px;
+      border: 2px solid #e1da9e;
+    }
+    
+    .add-owner-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 36px;
+    }
+    
+    .add-owner-text {
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    
+    .next-btn {
+      border-radius: 16px;
+      background-color: #e1da9e;
+      font-size: 25px;
+      white-space: nowrap;
+      padding: 20px 70px;
+      border: 2px solid #e1da9e;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .entity-info-ownership {
+        padding-right: 20px;
+      }
+    
+      .flex-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    
+      .sidebar {
+        width: 100%;
+      }
+    
+      .nav-bar {
+        margin-top: 33px;
+        padding: 0 20px;
+      }
+    
+      .nav-sub-item {
+        margin-left: 10px;
+      }
+    
+      .account-item,
+      .sign-out-item {
+        margin: 40px 0 0 10px;
+      }
+    
+      .main-content {
+        width: 100%;
+      }
+    
+      .content-wrapper {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    
+      .info-column {
+        width: 100%;
+      }
+    
+      .info-section {
+        margin-top: 40px;
+      }
+    
+      .owner-info {
+        padding-left: 20px;
+      }
+    
+      .owner-info-item {
+        margin-top: 40px;
+      }
+    
+      .input-column {
+        width: 100%;
+      }
+    
+      .input-wrapper {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    
+      .input-field {
+        max-width: 100%;
+      }
+    
+      .upload-container {
+        margin-top: 40px;
+      }
+    
+      .upload-column,
+      .photo-column {
+        width: 100%;
+      }
+    
+      .upload-box,
+      .photo-box {
+        margin-top: 40px;
+      }
+    
+      .photo-box {
+        padding: 0 20px;
+      }
+    
+      .next-btn {
+        white-space: initial;
+        padding: 0 20px;
+      }
+    }
+    </style>
+    
+    <section class="entity-info-ownership">
+      <div class="flex-container">
+        <aside class="sidebar">
+          <nav class="nav-bar">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a0d0bfde031f7e570c74a3067d8f96bf978254c97595922d3ec2779b09fab9e?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Company logo" class="logo" />
+            <a href="#" class="nav-item">Entity Home</a>
+            <a href="#" class="nav-item">Documents</a>
+            <a href="#" class="nav-sub-item">Formation</a>
+            <a href="#" class="nav-sub-item">Financial</a>
+            <a href="#" class="nav-sub-item">Tax</a>
+            <a href="#" class="nav-sub-item">Regulatory</a>
+            <a href="#" class="account-item">Account</a>
+            <a href="#" class="sign-out-item">Sign Out</a>
+          </nav>
+        </aside>
+        <main class="main-content">
+          <div class="content-wrapper">
+            <div class="info-container">
+              <div class="flex-container">
+                <div class="info-column">
+                  <section class="info-section">
+                    <h1 class="section-title">Entity Info</h1>
+                    <div class="owner-info">
+                      <h2 class="owner-info-title">Owner Info</h2>
+                      <label for="firstName" class="owner-info-item">First Name</label>
+                      <label for="middleName" class="owner-info-item">Middle Name</label>
+                      <label for="lastName" class="owner-info-item">Last Name</label>
+                    </div>
+                  </section>
+                </div>
+                <div class="input-column">
+                  <div class="input-wrapper">
+                    <input type="text" id="firstName" class="input-field" aria-label="First Name" />
+                    <input type="text" id="middleName" class="input-field" aria-label="Middle Name" />
+                    <input type="text" id="lastName" class="input-field" aria-label="Last Name" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="identification-section">
+              <h3 class="identification-title">Identification</h3>
+              <div class="upload-container">
+                <div class="flex-container">
+                  <div class="upload-column">
+                    <div class="upload-box">
+                      <div class="upload-content">
+                        <h4 class="upload-title">Upload</h4>
+                        <p class="upload-description">PDF, JPEG, or PNG</p>
+                      </div>
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Upload icon" class="upload-icon" />
+                    </div>
+                  </div>
+                  <div class="photo-column">
+                    <div class="photo-box">
+                      <div class="photo-content">
+                        <h4 class="photo-title">Photo</h4>
+                        <p class="photo-description">Link and upload directly from your phone camera</p>
+                      </div>
+                      <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/9ad616845ce1b39d9fe57a4d0c421348425719f8b46360fb3d8bcb01beb35acc?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Camera icon" class="photo-icon" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="action-container">
+                <button class="add-owner-btn">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a9d37fed347a689ebd3c065701b89ffa42b2c6a934180257f122fda8891a002?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="" class="add-owner-icon" />
+                  <span class="add-owner-text">ADD OWNER</span>
+                </button>
+                <button class="next-btn">Next</button>
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>

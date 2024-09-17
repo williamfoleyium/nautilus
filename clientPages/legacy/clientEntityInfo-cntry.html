@@ -1,0 +1,231 @@
+<style>
+.entity-info-page {
+  background-color: #fff;
+  padding: 0 80px 0 0;
+  overflow: hidden;
+}
+
+.page-layout {
+  display: flex;
+  gap: 20px;
+}
+
+.sidebar {
+  width: 19%;
+}
+
+.nav-bar {
+  background-color: #e1da9e;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000;
+  width: 100%;
+  padding: 23px 26px;
+  font: 400 16px Inter, sans-serif;
+}
+
+.profile-image {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 100%;
+  border-radius: 76px;
+  align-self: stretch;
+}
+
+.nav-item {
+  font-size: 24px;
+  margin-top: 26px;
+}
+
+.nav-item-indented {
+  margin: 28px 0 0 24px;
+}
+
+.nav-item-account {
+  font-size: 20px;
+  margin: 318px 0 0 13px;
+}
+
+.nav-item-sign-out {
+  font-size: 20px;
+  margin: 25px 0 0 13px;
+}
+
+.main-content {
+  width: 81%;
+  margin-left: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  margin-top: 103px;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.page-title {
+  color: #000;
+  font: 400 40px Inter, sans-serif;
+}
+
+.section-title {
+  color: #5a5a5a;
+  margin-top: 60px;
+  font: 400 32px Inter, sans-serif;
+}
+
+.form-container {
+  align-self: stretch;
+  margin: 30px 0 0 11px;
+}
+
+.form-layout {
+  display: flex;
+}
+
+.form-labels {
+  display: flex;
+  margin-top: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #5a5a5a;
+  font: 400 24px Inter, sans-serif;
+}
+
+.form-label {
+  align-self: stretch;
+  margin-top: 68px;
+}
+
+.form-inputs {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #000;
+  white-space: nowrap;
+  font: 400 32px Inter, sans-serif;
+}
+
+.form-input {
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 430px;
+  max-width: 100%;
+  height: 55px;
+  border: 1px solid #e1da9e;
+  margin-top: 31px;
+}
+
+.submit-button {
+  border-radius: 20px;
+  background-color: #e1da9e;
+  align-self: flex-end;
+  margin-top: 53px;
+  width: 260px;
+  max-width: 100%;
+  padding: 26px 70px;
+  border: 3px solid #e1da9e;
+  font: 400 32px Inter, sans-serif;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .entity-info-page {
+    padding-right: 20px;
+  }
+
+  .page-layout {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  .sidebar,
+  .main-content {
+    width: 100%;
+  }
+
+  .nav-bar {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+
+  .nav-item-indented {
+    margin-left: 10px;
+  }
+
+  .nav-item-account,
+  .nav-item-sign-out {
+    margin: 40px 0 0 10px;
+  }
+
+  .content-wrapper {
+    max-width: 100%;
+    margin-top: 40px;
+  }
+
+  .section-title,
+  .form-labels,
+  .form-label,
+  .form-inputs {
+    margin-top: 40px;
+  }
+
+  .submit-button {
+    margin-top: 40px;
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+</style>
+
+<section class="entity-info-page">
+  <div class="page-layout">
+    <aside class="sidebar">
+      <nav class="nav-bar">
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a0d0bfde031f7e570c74a3067d8f96bf978254c97595922d3ec2779b09fab9e?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" class="profile-image" alt="User profile" />
+        <a href="#" class="nav-item">Entity Home</a>
+        <a href="#" class="nav-item">Documents</a>
+        <a href="#" class="nav-item nav-item-indented">Formation</a>
+        <a href="#" class="nav-item nav-item-indented">Financial</a>
+        <a href="#" class="nav-item nav-item-indented">Tax</a>
+        <a href="#" class="nav-item nav-item-indented">Regulatory</a>
+        <a href="#" class="nav-item nav-item-account">Account</a>
+        <a href="#" class="nav-item nav-item-sign-out">Sign Out</a>
+      </nav>
+    </aside>
+    <main class="main-content">
+      <div class="content-wrapper">
+        <h1 class="page-title">Entity Info</h1>
+        <h2 class="section-title">Country of Incorporation</h2>
+        <form class="form-container">
+          <div class="form-layout">
+            <div class="form-labels">
+              <label for="address1" class="form-label">Address Line 1</label>
+              <label for="address2" class="form-label">Address Line 2</label>
+              <label for="city" class="form-label">City</label>
+              <label for="state" class="form-label">State</label>
+              <label for="country" class="form-label">Country</label>
+            </div>
+            <div class="form-inputs">
+              <input type="text" id="address1" class="form-input" />
+              <input type="text" id="address2" class="form-input" />
+              <input type="text" id="city" class="form-input" />
+              <input type="text" id="state" class="form-input" />
+              <input type="text" id="country" class="form-input" />
+              
+            </div>
+          </div>
+        </form>
+        <button type="submit" class="submit-button">Next</button>
+      </div>
+    </main>
+  </div>
+</section>

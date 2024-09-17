@@ -1,0 +1,401 @@
+<style>
+    .entity-info-page {
+      background-color: #fff;
+      padding: 0 80px 0 0;
+      overflow: hidden;
+    }
+    
+    .layout-container {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .sidebar {
+      width: 19%;
+    }
+    
+    .nav-bar {
+      background-color: #e1da9e;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      color: #000;
+      width: 100%;
+      padding: 23px 26px;
+      font: 400 16px Inter, sans-serif;
+    }
+    
+    .profile-image {
+      aspect-ratio: 1;
+      object-fit: contain;
+      width: 100%;
+      border-radius: 76px;
+    }
+    
+    .nav-item {
+      font-size: 24px;
+      margin-top: 26px;
+    }
+    
+    .nav-sub-item {
+      margin: 28px 0 0 24px;
+    }
+    
+    .nav-footer-item {
+      font-size: 20px;
+      margin: 25px 0 0 13px;
+    }
+    
+    .main-content {
+      width: 81%;
+      margin-left: 20px;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      margin-top: 103px;
+      flex-direction: column;
+    }
+    
+    .section-title {
+      color: #000;
+      font: 400 40px Inter, sans-serif;
+    }
+    
+    .documents-container {
+      display: flex;
+      margin-top: 26px;
+      width: 100%;
+      padding-left: 80px;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    
+    .document-card {
+      border-radius: 20px;
+      background-color: #fff;
+      display: flex;
+      width: 822px;
+      max-width: 100%;
+      gap: 20px;
+      font-family: Inter, sans-serif;
+      color: #000;
+      font-weight: 400;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 10px 0 0 11px;
+      padding: 24px 70px;
+      border: 3px solid #e1da9e;
+    }
+    
+    .document-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .document-title {
+      font-size: 32px;
+    }
+    
+    .document-format {
+      font-size: 20px;
+      align-self: flex-start;
+      margin-top: 25px;
+    }
+    
+    .document-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      width: 84px;
+      align-self: flex-start;
+      margin-top: 4px;
+    }
+    
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+    
+    @media (max-width: 991px) {
+      .entity-info-page {
+        padding-right: 20px;
+      }
+    
+      .layout-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    
+      .sidebar,
+      .main-content {
+        width: 100%;
+      }
+    
+      .nav-bar {
+        margin-top: 33px;
+        padding: 0 20px;
+      }
+    
+      .nav-sub-item {
+        margin-left: 10px;
+      }
+    
+      .nav-footer-item {
+        margin: 40px 0 0 10px;
+      }
+    
+      .content-wrapper {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    
+      .documents-container {
+        max-width: 100%;
+        padding-left: 20px;
+      }
+    
+      .document-card {
+        padding: 0 20px;
+      }
+    
+      .document-icon {
+        margin-top: 40px;
+      }
+    }
+    .entity-info-documents {
+          background-color: #fff;
+          overflow: hidden;
+          padding: 83px 23px 29px 80px;
+        }
+        
+        .document-container {
+          display: flex;
+          gap: 20px;
+        }
+        
+        .document-list {
+          display: flex;
+          flex-direction: column;
+          width: 76%;
+        }
+        
+        .document-item {
+          border-radius: 20px;
+          background-color: #fff;
+          display: flex;
+          gap: 20px;
+          color: #000;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 24px 70px;
+          font: 400 20px Inter, sans-serif;
+          border: 3px solid #e1da9e;
+          margin-top: 10px;
+        }
+        
+        .document-info {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        
+        .document-title {
+          font-size: 32px;
+          align-self: stretch;
+        }
+        
+        .document-status {
+          margin-top: 8px;
+        }
+        
+        .document-format {
+          margin-top: 4px;
+        }
+        
+        .document-icon {
+          aspect-ratio: 1;
+          object-fit: contain;
+          object-position: center;
+          width: 84px;
+          align-self: flex-start;
+          margin-top: 4px;
+        }
+        
+        .next-button {
+          border-radius: 20px;
+          background-color: #e1da9e;
+          color: #000;
+          padding: 26px 70px;
+          font: 400 32px Inter, sans-serif;
+          border: 3px solid #e1da9e;
+          width: 24%;
+          margin-left: 20px;
+          margin-top: 599px;
+        }
+        
+        @media (max-width: 991px) {
+          .entity-info-documents {
+            padding: 0 20px;
+          }
+        
+          .document-container {
+            flex-direction: column;
+            align-items: stretch;
+            gap: 0;
+          }
+        
+          .document-list {
+            width: 100%;
+          }
+        
+          .document-item {
+            max-width: 100%;
+            padding: 24px 20px;
+            margin-top: 40px;
+          }
+        
+          .document-title,
+          .document-info {
+            max-width: 100%;
+          }
+        
+          .document-icon {
+            margin-top: 40px;
+          }
+        
+          .next-button {
+            width: 100%;
+            margin-left: 0;
+            margin-top: 40px;
+            padding: 26px 20px;
+            white-space: normal;
+          }
+        }
+
+
+    </style>
+    
+    <section class="entity-info-page">
+      <div class="layout-container">
+        <aside class="sidebar">
+          <nav class="nav-bar">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a0d0bfde031f7e570c74a3067d8f96bf978254c97595922d3ec2779b09fab9e?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="User profile" class="profile-image" />
+            <a href="#" class="nav-item">Entity Home</a>
+            <a href="#" class="nav-item">Documents</a>
+            <a href="#" class="nav-sub-item">Formation</a>
+            <a href="#" class="nav-sub-item">Financial</a>
+            <a href="#" class="nav-sub-item">Tax</a>
+            <a href="#" class="nav-sub-item">Regulatory</a>
+            <a href="#" class="nav-footer-item">Account</a>
+            <a href="#" class="nav-footer-item">Sign Out</a>
+          </nav>
+        </aside>
+    
+        <main class="main-content">
+          <div class="content-wrapper">
+            <h1 class="section-title">Entity Info</h1>
+            <div class="documents-container">
+              <h2 class="section-title">Documents</h2>
+              
+              <article class="document-card">
+                <div class="document-info">
+                  <h3 class="document-title">Articles of Formation</h3>
+                  <p class="document-format">PDF Format</p>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="PDF icon" class="document-icon" />
+              </article>
+    
+              <article class="document-card">
+                <div class="document-info">
+                  <h3 class="document-title">Organizational Chart</h3>
+                  <p class="document-format">PDF Format</p>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="PDF icon" class="document-icon" />
+              </article>
+    
+              <article class="document-card">
+                <div class="document-info">
+                  <h3 class="document-title">W8 / W9 Tax Document</h3>
+                  <p class="document-format">PDF Format</p>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="PDF icon" class="document-icon" />
+              </article>
+    
+              <article class="document-card">
+                <div class="document-info">
+                  <h3 class="document-title">Financial Balance Sheet</h3>
+                  <p class="document-format">PDF Format</p>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="PDF icon" class="document-icon" />
+              </article>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>
+
+
+    <style>
+
+        </style>
+        
+        <section class="entity-info-documents">
+          <div class="document-container">
+            <div class="document-list">
+              <article class="document-item">
+                <div class="document-info">
+                  <h2 class="document-title">Investment Manager Agreement</h2>
+                  <p class="document-status">If Applicable</p>
+                  <p class="document-format">PDF Format</p>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Investment Manager Agreement icon" class="document-icon" />
+              </article>
+              
+              <article class="document-item">
+                <div class="document-info">
+                  <h2 class="document-title">Net Asset Value Document (NAV)</h2>
+                  <p class="document-status">If Applicable</p>
+                  <p class="document-format">PDF Format</p>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Net Asset Value Document icon" class="document-icon" />
+              </article>
+              
+              <article class="document-item">
+                <div class="document-info">
+                  <h2 class="document-title">Offering Memorandum</h2>
+                  <p class="document-status">If Applicable</p>
+                  <p class="document-format">PDF Format</p>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Offering Memorandum icon" class="document-icon" />
+              </article>
+              
+              <article class="document-item">
+                <div class="document-info">
+                  <h2 class="document-title">Certificate of Good Standing</h2>
+                  <p class="document-status">If Available</p>
+                  <p class="document-format">PDF Format</p>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Certificate of Good Standing icon" class="document-icon" />
+              </article>
+              
+              <article class="document-item">
+                <div class="document-info">
+                  <h2 class="document-title">Authorized Signatory List</h2>
+                  <p class="document-status">If Available</p>
+                  <p class="document-format">PDF Format</p>
+                </div>
+                <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/d76363943041e7d5d753705cd128c11c74923e4088bdb685e1ed75ec6c189cb1?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Authorized Signatory List icon" class="document-icon" />
+              </article>
+            </div>
+            
+            <button class="next-button">Next</button>
+          </div>
+        </section>

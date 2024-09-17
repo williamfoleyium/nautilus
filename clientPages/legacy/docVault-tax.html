@@ -1,0 +1,293 @@
+<style>
+    .document-vault-tax-docs {
+      background-color: #fff;
+      padding: 0 80px 0 0;
+      overflow: hidden;
+    }
+    
+    .layout-container {
+      display: flex;
+      gap: 20px;
+    }
+    
+    .sidebar {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 20%;
+    }
+    
+    .nav-bar {
+      background-color: #e1da9e;
+      display: flex;
+      flex-grow: 1;
+      flex-direction: column;
+      align-items: flex-start;
+      color: #000;
+      width: 100%;
+      padding: 23px 26px;
+      font: 400 16px Inter, sans-serif;
+    }
+    
+    .profile-image {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 100%;
+      border-radius: 76px;
+      align-self: stretch;
+    }
+    
+    .nav-item {
+      font-size: 24px;
+      margin-top: 26px;
+    }
+    
+    .nav-item-indented {
+      margin: 26px 0 0 24px;
+    }
+    
+    .nav-item-account {
+      font-size: 20px;
+      margin: 318px 0 0 13px;
+    }
+    
+    .nav-item-sign-out {
+      font-size: 20px;
+      margin: 25px 0 0 13px;
+    }
+    
+    .main-content {
+      display: flex;
+      flex-direction: column;
+      line-height: normal;
+      width: 80%;
+      margin-left: 20px;
+    }
+    
+    .content-wrapper {
+      display: flex;
+      margin-top: 95px;
+      flex-direction: column;
+      font-family: Inter, sans-serif;
+      color: #000;
+      font-weight: 400;
+    }
+    
+    .section-title {
+      font-size: 40px;
+      align-self: flex-start;
+    }
+    
+    .tax-documents-container {
+      display: flex;
+      margin-top: 99px;
+      padding-left: 33px;
+      flex-direction: column;
+    }
+    
+    .document-card {
+      border-radius: 20px;
+      background-color: #fff;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 41px 0 0 17px;
+      padding: 24px 60px;
+      border: 3px solid #e1da9e;
+    }
+    
+    .document-header {
+      display: flex;
+      gap: 40px 44px;
+      font-size: 32px;
+      flex-wrap: wrap;
+    }
+    
+    .document-title {
+      align-self: flex-start;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    
+    .year-selector {
+      display: flex;
+      white-space: nowrap;
+    }
+    
+    .year-label {
+      align-self: flex-start;
+      z-index: 10;
+    }
+    
+    .dropdown-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 58px;
+    }
+    
+    .document-format {
+      font-size: 20px;
+      margin-top: 6px;
+    }
+    
+    .add-document-button {
+      border-radius: 20px;
+      background-color: #e1da9e;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 32px;
+      justify-content: center;
+      margin: 34px 0 0 17px;
+      padding: 14px 70px;
+      border: 3px solid #e1da9e;
+    }
+    
+    .button-content {
+      display: flex;
+      width: 305px;
+      max-width: 100%;
+      gap: 21px;
+    }
+    
+    .add-icon {
+      aspect-ratio: 1;
+      object-fit: contain;
+      object-position: center;
+      width: 58px;
+    }
+    
+    .button-text {
+      flex-grow: 1;
+      width: 214px;
+      margin: auto 0;
+    }
+    
+    .next-button {
+      border-radius: 20px;
+      background-color: #e1da9e;
+      align-self: flex-end;
+      margin-top: 134px;
+      width: 260px;
+      max-width: 100%;
+      font-size: 32px;
+      white-space: nowrap;
+      padding: 26px 70px;
+      border: 3px solid #e1da9e;
+    }
+    
+    @media (max-width: 991px) {
+      .document-vault-tax-docs {
+        padding-right: 20px;
+      }
+    
+      .layout-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+    
+      .sidebar {
+        width: 100%;
+      }
+    
+      .nav-bar {
+        margin-top: 36px;
+        padding: 0 20px;
+      }
+    
+      .nav-item-indented {
+        margin-left: 10px;
+      }
+    
+      .nav-item-account {
+        margin: 40px 0 0 10px;
+      }
+    
+      .nav-item-sign-out {
+        margin-left: 10px;
+      }
+    
+      .main-content {
+        width: 100%;
+      }
+    
+      .content-wrapper {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    
+      .tax-documents-container {
+        max-width: 100%;
+        padding-left: 20px;
+        margin-top: 40px;
+      }
+    
+      .document-card {
+        max-width: 100%;
+        margin-top: 40px;
+        padding: 0 20px;
+      }
+    
+      .year-label {
+        margin-right: -3px;
+      }
+    
+      .add-document-button {
+        max-width: 100%;
+        padding: 0 20px;
+      }
+    
+      .next-button {
+        margin-top: 40px;
+        white-space: initial;
+        padding: 0 20px;
+      }
+    }
+    </style>
+    
+    <section class="document-vault-tax-docs">
+      <div class="layout-container">
+        <aside class="sidebar">
+          <nav class="nav-bar">
+            <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/8a0d0bfde031f7e570c74a3067d8f96bf978254c97595922d3ec2779b09fab9e?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="User profile" class="profile-image" />
+            <a href="#" class="nav-item">Entity Home</a>
+            <a href="#" class="nav-item">Documents</a>
+            <a href="#" class="nav-item nav-item-indented">Formation</a>
+            <a href="#" class="nav-item nav-item-indented">Financial</a>
+            <a href="#" class="nav-item nav-item-indented">Tax</a>
+            <a href="#" class="nav-item nav-item-indented">Regulatory</a>
+            <a href="#" class="nav-item nav-item-account">Account</a>
+            <a href="#" class="nav-item nav-item-sign-out">Sign Out</a>
+          </nav>
+        </aside>
+        <main class="main-content">
+          <div class="content-wrapper">
+            <h1 class="section-title">Document Vault</h1>
+            <div class="tax-documents-container">
+              <h2 class="section-title">Tax Documents</h2>
+              <div class="document-card">
+                <div class="document-header">
+                  <h3 class="document-title">W8 / W9 Tax Document</h3>
+                  <div class="year-selector">
+                    <label for="year-select" class="year-label">Year</label>
+                    <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/7a3996281c70e4befd82463229bc76cb25a5563fee57c6cda6cb0b27d0610da2?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Dropdown icon" class="dropdown-icon" />
+                  </div>
+                </div>
+                <p class="document-format">PDF Format</p>
+              </div>
+              <button class="add-document-button">
+                <div class="button-content">
+                  <img src="https://cdn.builder.io/api/v1/image/assets/TEMP/f6f3a856067f3368b110e489cf924e5f70c4068c467211f96e27c87a3b4ef280?placeholderIfAbsent=true&apiKey=714b97ce20294bfdb9f20f69294db7c8" alt="Add icon" class="add-icon" />
+                  <span class="button-text">Add Document</span>
+                </div>
+              </button>
+              <button class="next-button">Next</button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </section>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautilus</title>
+    <link rel="stylesheet" href="styles-landingpage.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">
+            <img src="./resources/nautilus-logo-alt.png" alt="Logo">
+        </div>
+        <h1 class="logo-name">Nautilus</h1>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#hnw">HNW and Corps</a></li>
+                <li><a href="#hedge-funds">Hedge Funds</a></li>
+                <li><a href="#investment-banks">Investment Banks</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+        <div class="btn-container">
+            <!-- <button class="btn demo-btn" onclick="location.href=''">Try Demo</button> -->
+            <button class="btn sign-in-button" onclick="location.href='./sign-in.html'">Sign In</button>
+        </div>
+    </nav>
+    <!-- <nav id="hamburger-nav">
+        <div class="logo">Nautilus</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()"> -->
+                    <!-- <span></span> HTML for line in hamburger  -->
+                    <!-- <span></span> HTML for line in hamburger -->
+                    <!-- <span></span> HTML for line in hamburger -->
+                <!-- </div>
+                <div class="menu-links">
+                    <li><a href="#solutions" onclick="toggleMenu()">Solutions</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                </div>
+            </div>
+    </nav> -->
+    <section id="hero">
+        <div class="left-column">
+            <div class="text-container">
+                <h1 class="hero-text-1">Onboarding passport for banking clients</h1>
+                <h1 class="hero-text-2">Front-to-Back toolkit for banking operations</h1>
+            </div>
+            <div class="btn-container">
+                <button class="btn contact-btn" onclick="location.href=''">Contact Us</button>
+                <button class="btn demo-btn" onclick="location.href='./clientHomePage.html'">Try Demo</button>
+            </div>
+        </div>
+        <div class="pic-container">
+            <img src="./resources/hero-image.png" alt="Sample Screen Shot 1" class="hero-image">
+        </div>
+    </section>
+    <section id="hnw">
+        <div class="text-container">
+            <h1 class="section-text-bold">HNW Individuals<br>Corporations<br>Family Offices</h1>
+            <p class="section-subtext">Create your banking passport<br>Eliminate time consuming and repetitive bank requests</p>
+        </div>
+        <div class="pic-container">
+            <img src="./resources/client-landingpage-image.png" alt="Client Home Page" class="body-image">
+        </div>
+    </section>
+    <section id="hedge-funds">
+        <div class="container">
+            <div class="pic-container">
+                <img src="./resources/regulatory-page.png" alt="Regulatory Adherence Screen" class="body-image">
+            </div>
+            <div class="text-container">
+                <h1 class="section-text-bold">Hedge Funds</h1>
+                <p class="section-subtext">Make opening new accounts, duplicate accounts, and staying up-to-date on adherences fast and easy</p>
+            </div>
+        </div>
+    </section>
+    <section id="investment-banks">
+        <div class="text-container">
+            <h1 class="section-text-bold">Investment Bank<br>and<br>Institutions</h1>
+            <p class="section-subtext">Track your onboards in on esimple tool<br>Monitor your annual KYC, Tax, and Credit reviews<br>Instantly know if a client is Good-To-Trade</p>
+        </div>
+        <img src="./resources/ib-page.png" alt="Investment Bank Screen" class="body-image">
+    </section>
+    <section id="action"> <!--formally main-content-->
+        <h2 class="action-title"><span class="highlight">Simplify</span> Investment Bank and Wealth Management Onboarding</h2>
+    </section>
+    <section id="sign-up">
+        <div class="sign-up-container">
+            <div class="sign-up-wrapper">
+                <div class="client-box">
+                    <h3 class="client-title">Looking to Join a Bank?</h3>
+                        <button class="btn client-button" onclick="location.href='clientSignupPage.html'">Sign Up</button>
+                </div>
+                <div class="investment-bank-box"> <!--formally ib-box-->
+                    <h3 class="investment-bank-title">For Banks and Institutions</h3>
+                    <button class="btn investment-bank-button" onclick="location.href='investmentBankSignupPage.html'">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section class="contact-container">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Get in touch</h2>
+                <hr>
+            </div>
+            <input type="hidden" name="access_key" value=" 90ea9b4d-2f1c-4b05-8628-f4d671ea8ebc">
+            <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+            <input type="text" name="entity-name" placeholder="Entity Name" class="contact-inputs">
+            <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
+            <button type="submit">Sumbit</button>
+        </form>
+    </section>
+</body>
+<footer>
+    <div class="footer-logo">
+        <img src="./resources/nautilus-logo-alt.png" alt="Logo">
+    </div>
+    <nav class="footer-nav-links-container">
+        <div>
+            <ul class="nav-links">
+                <li><a href="#solutions">Solutions</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <p>Copyright &#169; 2024 Nautilus. All rights Reserved</p> -->
+</footer>
+</html>
