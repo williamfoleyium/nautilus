@@ -1,0 +1,81 @@
+/* SIDE NAV */
+
+
+.side-bar {
+    position: fixed;
+    height: 100vh;
+    width: 19%; /* Adjust the width of the sidebar */
+    flex-shrink: 0; /* Prevents the sidebar from shrinking */
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+  }
+  
+  .nav-bar-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #e1da9e;
+    flex-grow: 1;
+    align-items: flex-start;
+    color: #000;
+    padding: 23px 26px;
+    list-style: none;
+    font-size: 1.5rem;
+    height:100vh;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+  }
+  
+  .site-links {
+    text-decoration: none;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 0.5rem;
+  }
+  
+  .nav-subitem {
+    margin: 0 2rem;
+    font-size: 1rem;
+  }
+  
+  
+  a {
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
+  }
+  
+  a:hover {
+    color: #DAA520;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: #FFD700;
+  }
+  
+  /* New sidebar footer styling */
+  .sidebar-footer {
+    margin-top: auto; /* Pushes the footer items to the bottom */
+    margin-bottom: 2rem;
+  }
+  
+  .nav-footer-item {
+    text-decoration: none;
+    /* margin-top: 1rem; */
+    display: block;
+  }

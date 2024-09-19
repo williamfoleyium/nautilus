@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    height:100%;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    height:100%;
+    display: flex;
+}
+
+.layout-container {
+    display: flex; /* Aligns nav and main side by side */
+    width: 100%; /* Ensures the container takes up the full width */
+    height: 100vh; /* Set layout to take full viewport height */
+}
+
+section {
+    padding-top: 4vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+    padding-bottom: 4vh;
+}
+
+
+
+/* MAIN CONTENT */
+
+.main-content {
+    flex-grow: 1; /* Allows the main content to take up the remaining space */
+    padding: 20px; 
+    overflow-y: auto;
+  }
+
+  .title-message {
+    color: #000;
+    align-self: flex-start;
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+  .portal-sections {
+    display: flex;
+    margin-top: 2rem;
+    width: 100%;
+    padding-left: 80px;
+    flex-direction: column;
+  }
+
+  .primary-sections {
+      display: flex;
+      gap: 1rem;
+      /* margin-bottom: 3rem; */
+      background-color: #e1da9e;
+      flex-direction: column;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-radius: 25px;
+      
+      display: flex;
+
+      flex-wrap: wrap;
+
+      font-family: Inter, sans-serif;
+      color: #000;
+      font-weight: 400;
+  }
+
+.request-title {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 32px;
+}
+
+.request-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    font-size: 28px;
+    
+     /* display: flex;
+      margin-top: 20px;
+      width: 100%;
+      padding-left: 79px;
+      flex-direction: column; */
+      
+    
+
+
+}
+
+
+.info-item {
+    border-radius: 25px;
+    background-color: #f1f1f1;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-top: 18px; 
+  }
+  
+  .info-icon {
+    aspect-ratio: 1;
+    object-fit: contain;
+    object-position: center;
+    width: 66px;
+    align-self: start;
+  }
+
+
+
+
+
+  .next-button {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #B38F48;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 20rem;
+    border-radius: 0.5rem;
+    border: #e1da9e 0.5rem solid;
+    background: white;
+    margin-left: auto;
+  }
+
+  .next-button:hover {
+    cursor:pointer
+  }
