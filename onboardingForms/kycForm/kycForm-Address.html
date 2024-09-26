@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautilus Home Page</title>
+    <link rel="stylesheet" href="../formStyle.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="../../clientPages/navStyle.css">
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="sidebar">
+            <div class="nav-bar-container">
+                <div class="logo-container">
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                </div>
+                <div>
+                    <ul class="site-links">
+                        <li><a href="./entityProfile.html" class="nav-item">Entity Profile</a></li>
+                        <li><a href="./entityName-client.html" class="nav-subitem">Entity Name</a></li>
+                        <li><a href="./PPOB-client.html" class="nav-subitem">PPOB</a></li>
+                        <li><a href="./coi-client.html" class="nav-subitem">COI</a></li>
+                        <li><a href="./ownerInfo-Client.html" class="nav-subitem">Ownership Info</a></li>
+                        <li><a href="./regQuestions-client.html" class="nav-subitem">Regulatory Questions</a></li>
+                        <li><a href="./docVaultHome.html" class="nav-item">Document Vault</a></li>
+                        <li><a href="./docVaultFormation-client.html" class="nav-subitem">Formation Documents</a></li>
+                        <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
+                        <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
+                        <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                    </ul>
+                </div>
+                <footer class="sidebar-footer">
+                    <ul>
+                        <li><a href="#" class="nav-footer-item">Account</a></li>
+                        <li><a href="#" class="nav-footer-item">Sign Out</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </nav>
+    </div>
+    <main class="main-content">
+        <div class="entity-info-container">
+            <section>
+                <h1 class="entity-info-title">KYC Form</h1>
+            <h3>Principal + US & UK + High Risk</h3>
+            <form action="#" class="entity-info-form" method="GET">
+                <div class="section-title">
+                    <h2 class="sub-section-title">Client Information</h2>
+                </div>
+                
+                <div class="kyc-section">
+                    <h3>Address</h3>
+                    <br>
+                    <div class="question">
+                        <label>Please provide the address of the Principal Place of Business (i.e. Headquarters of the client, a PO Box is not sufficient)</label>
+                        <br>
+                        <label for="client-ppob">Address:</label>
+                        <input id="client-ppob" type="text" name="client-ppob" required> 
+                        <br>
+                        <label for="city">City:</label>
+                        <input id="city" type="text" name="city" required>
+                        <br>
+                        <label for="state">State/County:</label>
+                        <input id="state" type="text" name="state" required>
+                        <br>
+                        <label for="zip">Zip Code / Post Code:</label>
+                        <input id="zip" type="text" name="zip" required>
+                        <br>
+                        <label for="country">Country:</label>
+                        <input id="country" type="text" name="country" required>
+                        <br>
+                    </div>
+                    <hr>
+                    <div class="question">
+                        <label>Is the Registered Address the same as the principal place of business?</label>
+                        <br>
+                        <input id="yes" type="radio" name="answer6" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer6" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+                    <hr>
+                    <div class="question">
+                        <label>Is the Correspondence Address the same as the principal place of business?</label>
+                        <br>
+                        <input id="yes" type="radio" name="answer7" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer7" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+
+                <div class="button-container">
+                    <button type="submit" class="prev-button" onclick="location.href='./PPOB-client.html'">Prev</button>
+                    <button type="submit" class="next-button" onclick="location.href='./ownerInfo-Client.html'">Next</button>
+                </div>
+            </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+

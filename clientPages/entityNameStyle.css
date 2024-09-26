@@ -28,6 +28,9 @@ section {
     padding-bottom: 4vh;
 }
 
+h1, h2, h3, p, label{
+  color: #4A4A68;
+}
 
 
 /* MAIN CONTENT */
@@ -39,7 +42,7 @@ section {
   }
 
   .entity-info-container {
-    color: #000;
+    color: #4A4A68;
     align-self: flex-start;
     font-size: 2rem;
     margin-top: 3rem;
@@ -73,24 +76,27 @@ section {
     width: 415px;
     max-width: 100%;
     height: 49px;
-    border: 1px solid #E1DA9E;
+    border: 1px solid #5B1654;
     margin-bottom: 4rem;
   }
 
   .next-button {
     font-weight: 600;
     font-size: 2rem;
-    color: #B38F48;
+    color: #5B1654;
     transition: all 300ms ease;
     padding: 1rem;
     width: 10rem;
     border-radius: 0.5rem;
-    border: #e1da9e 0.5rem solid;
+    border: #5B1654 0.5rem solid;
     background: white;
   }
 
   .next-button:hover {
-    cursor:pointer
+    cursor:pointer;
+    background-color: white;
+    color: #005DA1;
+    border: #005DA1 1rem solid;
   }
 
 

@@ -30,7 +30,9 @@ section {
     padding-bottom: 4vh;
 }
 
-
+h1, h2, h3, h4, p, label{
+  color: #4A4A68;
+}
 
 /* MAIN CONTENT */
 
@@ -119,7 +121,7 @@ section {
     width: 40rem; 
     height: 5rem;
     padding: 1rem 1rem;
-    border: 6px solid #e1da9e;
+    border: 6px solid #5B1654;
     flex-direction: row;
 }
 
@@ -169,8 +171,9 @@ section {
 }
 
 .add-doc-button {
+    color: #5B1654;
     border-radius: 15px;
-    background-color: #e1da9e;
+    background-color: white;
     display: flex;
     align-items: center; /* Center items vertically */
     justify-content: center; /* Center items horizontally */
@@ -178,7 +181,7 @@ section {
     gap: 12px;
     font-size: 24px;
     padding: 14px 16px;
-    border: 2px solid #e1da9e;
+    border: .3rem solid #5B1654;
     cursor: pointer; /* Add a pointer cursor on hover */
 }
 
@@ -187,41 +190,50 @@ section {
     max-height: 48px; /* Ensure the icon size is consistent */
 }
 
+.add-doc-button:hover {
+    cursor:pointer;
+    background-color: white;
+    color: #005DA1;
+    border: #005DA1 .4rem solid;
+}
 
   /* NEXT BUTTON */
   .button-container {
     display: flex;
-    justify-content: space-between; /* Spread buttons apart */
-    margin-top: auto; /* Push buttons to the bottom of the main content */
-    padding-top: 1rem; /* Add some space above the buttons */
+    justify-content: space-between; /* Positions buttons on opposite sides */
+    align-items: center; /* Centers the buttons vertically within the container */
+    padding: 0 0rem; /* Optional: Add padding to the sides for spacing */
+    width: 100%; /* Ensures the container spans the full width */
   }
 
   .next-button, .prev-button {
     font-weight: 600;
     font-size: 2rem;
-    color: #B38F48;
+    color: #5B1654;
     transition: all 300ms ease;
     padding: 1rem;
     width: 10rem;
     border-radius: 0.5rem;
-    border: #e1da9e 0.5rem solid;
+    border: #5B1654 0.5rem solid;
     background: white;
   }
-
-.prev-button {
-    margin-left: 2rem;
-}
 
 .next-button {
     margin-left: auto;
 }
 
-  .next-button:hover {
-    cursor:pointer
-  }
+.next-button:hover {
+  cursor:pointer;
+  background-color: white;
+  color: #005DA1;
+  border: #005DA1 1rem solid;
+}
 
   .prev-button:hover {
-    cursor:pointer
+    cursor:pointer;
+    background-color: white;
+    color: #005DA1;
+    border: #005DA1 1rem solid;
   }
 
 

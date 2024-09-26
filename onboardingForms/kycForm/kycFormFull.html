@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautilus Home Page</title>
+    <link rel="stylesheet" href="../formStyle.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="../clientPages/navStyle.css">
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="sidebar">
+            <div class="nav-bar-container">
+                <div class="logo-container">
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                </div>
+                <div>
+                    <ul class="site-links">
+                        <li><a href="./entityProfile.html" class="nav-item">Entity Profile</a></li>
+                        <li><a href="./entityName-client.html" class="nav-subitem">Entity Name</a></li>
+                        <li><a href="./PPOB-client.html" class="nav-subitem">PPOB</a></li>
+                        <li><a href="./coi-client.html" class="nav-subitem">COI</a></li>
+                        <li><a href="./ownerInfo-Client.html" class="nav-subitem">Ownership Info</a></li>
+                        <li><a href="./regQuestions-client.html" class="nav-subitem">Regulatory Questions</a></li>
+                        <li><a href="./docVaultHome.html" class="nav-item">Document Vault</a></li>
+                        <li><a href="./docVaultFormation-client.html" class="nav-subitem">Formation Documents</a></li>
+                        <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
+                        <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
+                        <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                    </ul>
+                </div>
+                <!-- New container for footer items -->
+                <div class="sidebar-footer">
+                    <ul>
+                        <li><a href="" class="nav-footer-item">Account</a></li>
+                        <li><a href="" class="nav-footer-item">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+        
+        <main class="main-contnet">
+            <div class="entity-info-container">
+                <h1 class="entity-info-title">KYC Form</h1>
+                <h3>Principal + US & UK + High Risk</h3>
+                <form action="" class="entity-info-form" method="GET">
+                    <div class="section-title">
+                        <h2 class="sub-section-title">KYC Form - Client Information</h2>
+                    </div>
+                    <div class="kyc-section">
+                        <h3>Client Information</h3>
+                        <span class="name-label">Entity Type</span>
+                        <br>
+                        <input id="corp" type="radio" name="answer1" value="corp" required>
+                        <label for="corp">Limited Company/Corporation</label>
+                        <br>
+                        <input id="fund" type="radio" name="answer1" value="fund" required>
+                        <label for="fund">Limited Partnerships/Funds</label>
+                        <br>
+                        <input id="partnership" type="radio" name="answer1" value="partnership" required>
+                        <label for="partnership">Partnership</label>
+                        <br>                    
+                        <input id="state-owned-entities" type="radio" name="answer1" value="state-owned-entities" required>
+                        <label for="state-owned-entities">State Owned Entities</label>
+                        <br>
+                        <input id="spv" type="radio" name="answer1" value="spv" required>
+                        <label for="spv">Special Purpose Vehicle</label>
+                        <br>
+                        <input id="trust" type="radio" name="answer1" value="trust" required>
+                        <label for="trust">Trust & Foundation</label>
+                        <br>
+                        <input id="muni" type="radio" name="answer1" value="muni" required>
+                        <label for="muni">Sovereign Government / Municipality</label>
+                        <br>
+                        <span>Is the entity listed on an exchange (or 50.1% or greater owned subsidiary of an entity listed on an exchange)</span>
+                        <input id="yes" type="radio" name="answer2" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer2" value="No" required>
+                        <label for="no">No</label>
+                        <br>
+                        <span>Is the entity a financial service provider? (or 50.1% or greater owned subsidiary of a financial service provider)</span>
+                        <input id="yes" type="radio" name="answer3" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer3" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+
+                    <div class="kyc-section">
+                        <h3>Entity Information</h3>
+                        <br>
+                        <label for="client-name">Client Full Legal Name:</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <label for="coi">Country of Incorporation:</label>
+                        <input id="coi" type="text" name="coi" required>
+                        <br>
+                        <label for="govID">Government ID (EIN/TIN):</label>
+                        <input id="govID" type="text" name="govID" required>
+                        <br>
+                        <label for="taxID">Tax ID:</label>
+                        <input id="taxID" type="text" name="taxID" required>
+                        <br>
+                        <label for="incorp-date">Date of Incorporation (DD/MM/YYYY):</label>
+                        <input id="incorp-date" type="text" name="incorp-date" required>
+                        <br>
+                        <span>Does the client have any previous names (wihtin the alst 3 years)?</span>
+                        <input id="yes" type="radio" name="answer4" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer4" value="No" required>
+                        <label for="no">No</label>
+                        <br>
+                        <span>Does the client have any active Trading Names?</span>
+                        <input id="yes" type="radio" name="answer5" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer5" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+
+                    <div class="kyc-section">
+                        <h3>Address</h3>
+                        <br>
+                        <span>Please provide the address of the Principal Place of Business (i.e. Headquarters of the client, a PO Box is not sufficient)</span>
+                        <label for="client-ppob">Address:</label>
+                        <input id="client-ppob" type="text" name="client-ppob" required>
+                        <br>
+                        <label for="city">City:</label>
+                        <input id="city" type="text" name="city" required>
+                        <br>
+                        <label for="state">State/County:</label>
+                        <input id="state" type="text" name="state" required>
+                        <br>
+                        <label for="zip">Zip Code / Post Code:</label>
+                        <input id="zip" type="text" name="zip" required>
+                        <br>
+                        <label for="country">Country:</label>
+                        <input id="country" type="text" name="country" required>
+                        <br>
+                        <span>Is the Registered Address the same as the principal place of business?</span>
+                        <input id="yes" type="radio" name="answer6" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer6" value="No" required>
+                        <label for="no">No</label>
+                        <br>
+                        <span>Is the Correspondence Address the same as the principal place of business?</span>
+                        <input id="yes" type="radio" name="answer7" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer7" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+
+                    <div class="kyc-section">
+                        <h3>Client Business Activity</h3>
+                        <br>                        
+                        <label for="message">Provide a detailed description of the primary business activity in which the client is engaged.:</label>
+                        <br>
+                        <textarea id="message" name="message" rows="8" cols="40" required></textarea>
+                         <br>
+                        <span>Please confirm if the client is any of the following</span>
+                        <br>
+                        <label for="bank">Bank/Bank Branch</label>
+                        <input value="bank" type="checkbox" name="boxes" required>
+                        <br>
+                        <label for="supernational">Supernational</label>
+                        <input value="supernational" type="checkbox" name="boxes" required>
+                        <br>
+                        <label for="pic">Personal Investment Company</label>
+                        <input value="pic" type="checkbox" name="boxes" required>
+                        <br>
+                        <label for="spac">Special Purpose Acquisition Company</label>
+                        <input value="spac" type="checkbox" name="boxes" required>
+                        <br>
+                        <label for="na">N/A</label>
+                        <input value="na" type="checkbox" name="boxes" required>
+                        <br>
+                    </div>
+                   
+                    <div class="section-title">
+                        <h2 class="sub-section-title">Source of Funds</h2>
+                    </div>
+                    <div class="kyc-section">
+                        <span>Please confirm the client intends to use its own funds (i.e. funds generated from its principal business activity) to fund/pay UBS fee's and/or to fund the transaction/ repay loan</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer8" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer8" value="No" required>
+                        <label for="no">No - If 3rd Party funding is going to be used; please provide details of the 3rd party (name and country)</label>
+                    </div>
+
+
+                    <div class="section-title">
+                        <h2 class="sub-section-title">Sanctions and Vulnerable Activites</h2>
+                    </div>
+                    <div class="kyc-section">
+                        <h3>Sensitive Countries</h3>
+                        <br>   
+                        <label for="client-name">Is</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>and/or any of its connected parties including shareholders, subsidiaries, assets, affiliates (including but not limited to joint venture partners, significant suppliers or agents) or any of its directors or officers: a. an individual or entity that is, or is owned or controlled by one or more individual or entity that is, currently the subject or target of any sanctions (including sectoral sanctions) administrated or enforced by the UN Security Council, EU, US, Switzerland, or UK governments or located, organised, or resident in, or an agency or instrumentality of the government of, a country or territory that is the subject of comprehensive sanctions (currently Cuba, Iran, North Korea, Syria and the Donetsk, Lugansk Zaporizhzhia, Kherson and Crimea regions of Ukraine?) b. engaged in, previously engaged within the last 12 months, or have unfunded commitments to engage, in any dealings/ transactions with any individual or entity that is, or is owned or controlled by one or more individual or entity that is, currently subject to any sanctions or a country or territory that is the subject of comprehensive sanctions (currently Cuba, Iran, North Korea,Syria and the Donetsk, Lugansk, Zaporizhzhia, Kherson and Crimea region of Ukraine)?</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer9" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer9" value="No" required>
+                        <label for="no">No - If 3rd Party funding is going to be used; please provide details of the 3rd party (name and country)</label>
+                        
+                        <br>   
+                        <label for="client-name">Is</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>and/or any of it its connected parties: a. located, organised, or resident in Afghanistan, Belarus, Democratic Republic of Congo; Palestinian Territories;Libya; Myanmar; Nicaragua; Russia; South Sudan; Sudan; Venezuela; Yemen; Zimbabwe? b. an agency, instrumentality or acting on behalf (in official capacity) of, or owned or controlled by, the government of Afghanistan, Belarus, Democratic Republic of Congo; Palestinian Territories; Libya; Myanmar; Nicaragua; Russia; South Sudan; Sudan; Venezuela; Yemen; Zimbabwe? c. conducting business with or behalf of public officials or government of Afghanistan, Belarus; Democratic Republic of Congo; Palestinian Territories; Libya; Myanmar; Nicaragua; Russia; South Sudan; Sudan; Venezuela; Yemen; Zimbabwe</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer10" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer10" value="No" required>
+                        <label for="no">No</label>
+
+                        <br>   
+                        <label for="client-name">Does</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>or any of its group companies have direct or indirect exposure to: a. Russian or Belarussian Sectoral Sanctions affected entities b. Russian energy(including energy pipeline construction), military, defence or intelligence sectors; c. Belarussian potassium chloride (potash), energy (including petrochemical and petroleum products), tobacco, aviation, cargo handling services, construction, athletics, technology for communications, defence or security sectors; d. Belarussian state-owned or controlled companies, including majority state-owned credit or financial institutions; e. Defence, Arms, War Materials, interception and monitoring goods and technology or Dual-use goods (includes manufacture or distribution of goods, services or technology with a military application, dealers and intermediaries involved).</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer11" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer11" value="No" required>
+                        <label for="no">No</label>
+
+                        <br>   
+                        <label for="client-name">Is</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>or any of the Group Companies (including parent, subsidiaries, JV and other members of the group) has been subject to an enforcement action under US, UN, EU, UK, or CH sanctions regulations or has made a disclosure or reported any sanctions related issues to a regulatory agency in the last 12 months?</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer12" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer12" value="No" required>
+                        <label for="no">No</label>
+
+                        <h3>Physical Transport</h3>
+                        <br>   
+                        <label for="client-name">Is</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>Does the client or its Connected Parties deal in, trade, or transport merchandise, commodities or services of: a.Sanctioned Countries (Cuba, Iran, North Korea, Syria and , the Donetsk, Lugansk, Zaporizhzhia, Kherson and Crimearegions of Ukraine) origin; b. to, through or from Sanctioned Countries/ individuals / entities; or c. on Sanctioned Countries owned or registered vessels or aircraft?</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer13" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer13" value="No" required>
+                        <label for="no">No</label>
+                        
+                        <h3>Sensitive Industries</h3>
+                        <br>   
+                        <label for="client-name">To the best of your knowledge, does</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>or any of its group companies (including but not limited to its parent and subsidiaries) and/or any of its controllers and owners, have connections to or involvement with any of the following business areas: Cannabis related businesses, Defense , arms or war materials (includes manufacture or distribution of goods, services or technology with a military application, dealers and intermediaries involved in such industries), Casinos, Betting or Gambling industry, Extractive industries (including energy minerals such as oil or gas, metallic both precious and base metals, and non-metallic minerals, arctic, shale or deep water drilling, or precious and semi-precious stones), Non Bank - Banknote dealers, Money remittance / Money Services Businesses - Regulated/Unregulated, FX Retail aggregators , Spread betting, Virtual Asset Service Provider, Virtual Currency Business (including Financial intermediaries offering virtual currencies related products), Pay Day Lending / Money Lending / Pawnbroker activities, Charities, Tobacco products, Cultural artifacts or other items of archaeological, historical, cultural or religious significance or of rare scientific value, Ivory or other items related to protected species, Professional sports agent/sports marketing agents, Art Market Participants including but not limited to Art Dealers, Freeports, Auction houses and professional dealers in art and antiques/protected species, Power generation from coal, nuclear or hydro, including large dams and / or Shipping?</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer14" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer14" value="No" required>
+                        <label for="no">No</label>
+                        
+                        <h3>Soft Commodities</h3>
+                        <br>   
+                        <label for="client-name">To the best of your knowledge, does</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>or any of its group companies (including but not limited to its parent and subsidiaries) and/or any of its controllers and owners, have connections to or involvement with any of the following business areas: Production, processing or trading of palm oil, soy, timber, fish and seafood?</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer15" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer15" value="No" required>
+                        <label for="no">No</label>
+                        
+                        <h3>Sanctions Disclosures</h3>
+                        <br>   
+                        <span><strong>What are the new restrictions?</strong><br>
+                            The new restrictions prohibit sales of CHF and EUR-denominated transferable securities issued after 12 April 2022, or investment funds providing
+                            exposure to those securities, to any Russian and Belarusian persons. specifically, these are as follows:<br>
+                            - Council Regulation (EU) No 833/2014 of 31 July 2014 concerning restrictive measures in view of Russia's actions destabilising the situation in
+                            Ukraine, as amended (the "Regulation 833/2014"), in particular by Council Regulation (EU) 2022/328 of February 2022 amending Regulation No8333/2014;<br>
+                            - Council Regulation (EC) No 765/2006 concerning restrictive measures in view of the situation in Belarus and the involvement of Belarus in the Russian aggression against Ukraine, as amended (the "Regulation 765/2006"), by Council Regulation (EU) 2022/398 of 9 March 2022 amending Regulation (EC) No 765/2006<br>
+                            - The Swiss Ordinance of 4 March 2022 on Measures in Connection with the Situation in Ukraine (SR 946.231.116.72)<br>
+                            -The Swiss Ordinance of 16 March 2022 on Measures with Respect to Belarus (SR 946.231.116.9)<br>
+                            <strong>What are "Russian and Belarusian persons"?</strong><br>
+                            "Russian/Belarusian person" are defined to include any Russian/Belarusian national or natural person residing in Russia/Belarus or any legal person, entity or body established in Russia/Belarus. The restrictions also apply to any legal person whose ultimate beneficial owner is a Russian/Belarusian person but does not apply to nationals of EU or natural persons having a temporary or permanent residence permit in EU member State. In the case of Swiss restrictions, the prohibition does not apply to nationals of Switzerland or an EEA member state or natural persons, having a temporary or permanent residence permit in Switzerland and/or EEA member state.<br>
+                            <strong>What are "transferable securities"?</strong><br>
+                            "Transferable security" is defines in Article 1(f) of Regulation 833/2014 (and equivalent Belarus regulation) as the following classes of securities, including in the form of crypto assets, which are negotiable on the capital market, excluding instruments of payment: <br>
+                            - Shares in companies and other securities equivalent to shares in companies, partnerships or other entities, and depositary receipts in respect of shares;<br>
+                            - Bonds or other forms of securitised debt, including depositary receipts in respect of such securities;<br>
+                            - Any other securities giving the right to acquire or sell any such transferable securities or giving rise to cash settlement determined by reference to transferable securities.<br>
+                            Certain derivatives are also classed are transferable securities, including options, futures, forwards or warrants irrespective of how they are traded (OTC or on exchange) where they give the right to acquire or sell transferable securities referred to in (i) or (II).
+                        </span>
+                    </div>
+
+                    <div class="section-title">
+                        <h2 class="sub-section-title">Settlor/Grantor/Foundes(s)</h2>
+                    </div>
+                    <div class="kyc-section">
+                        <span>Settlor/Grantor/Founder - the Natural person/entity who set up and contributed assets into the entity</span>
+                        <br>
+                        <span>- Is the Settlor/Grantor/Founder a</span>
+                        <input id="natrualperson" type="radio" name="answer16" value="natrualperson" required>
+                        <label for="natrualperson">Natural Person/Family</label>
+                        <input id="entity" type="radio" name="answer16" value="entity" required>
+                        <label for="entity">Entity</label>
+                        <br>
+                        <!-- <table id="myTable">
+                            <thead>
+                                <tr>
+                                    <th>Entity Name</th>
+                                    <th>Country of Incorporation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Row 1, Column 1</td>
+                                    <td>Row 1, Column 2</td>
+                                </tr>
+                            </tbody>
+                        </table> -->
+                        <button onclick="addRow()">Add Row</button>
+                        <script>
+                            function addRow() {
+                                // Get the table body
+                                var table = document.getElementById("myTable").getElementsByTagName("tbody")[0];
+                    
+                                // Create a new row
+                                var newRow = table.insertRow();
+                    
+                                // Create new cells for the row
+                                var cell1 = newRow.insertCell(0);
+                                var cell2 = newRow.insertCell(1);
+                    
+                                // Set the content of the cells
+                                cell1.innerHTML = "New Row, Column 1";
+                                cell2.innerHTML = "New Row, Column 2";
+                            }
+                        </script>
+                        <br>
+                        <span>- Confirm no other contributions to the Trusts Assets (i.e. from a 3rd party) Confirmed</span>
+                        <input id="confirmed" type="radio" name="answer17" value="confirmed" required>
+                        <label for="confirmed">Confirmed</label>
+                        <input id="further-assets" type="radio" name="answer17" value="further-assets" required>
+                        <label for="further-assets">Further Assets Provided</label>
+                    </div>
+
+                    <div class="section-title">
+                        <h2 class="sub-section-title">Beneficiary(s)</h2>
+                    </div>
+                    <div class="kyc-section">
+                        <span>- Do any natural person(s)/families hold an entitlement to 25% or more of the Trust/Foundations assets (i.e. a Beneficiary)</span>
+                        <input id="yes" type="radio" name="answer18" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer18" value="No" required>
+                        <label for="no">No</label>
+                        <br>
+                        <span>- Do any entities hold an entitlement to 25% or more of the Trust/Foundations assets (i.e. a Beneficiary)</span>
+                        <input id="yes" type="radio" name="answer19" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer19" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+
+                    <div class="section-title">
+                        <h2 class="sub-section-title">Ownership</h2>
+                    </div>
+                    <div class="kyc-section">
+                        <h3>Relevant beneficial Owner(s) - Limited and General Partners</h3>
+                        <br>
+                        <h3>Bearer Shares</h3>
+                        <br>
+                        <span>Can the client or any legal entities within its ownership structure issue share capital in bearer form OR has the client or any legal entities within its ownership structure issued share capital in bearer form?</span>
+                        <input id="yes" type="radio" name="answer20" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer20" value="No" required>
+                        <label for="no">No</label>
+                        <br>
+                        <span> <i>Bearer shares are defined as issued unregistered share certificates or similar instruments that represent ownership of the company by whomever is in possession of the certificate.</i></span>
+                    </div>
+
+                    <div class="section-title">
+                        <h2 class="sub-section-title">Nominee Shareholder and/or Director(s)</h2>
+                    </div>
+                    <div class="kyc-section">
+                        <h3>Nominee Shareholder and/or Director(s)</h3>
+                        <br>                        
+                        <span>- Are there any shareholders/Directors within the clients structure acting in nominee capacity?</span>
+                        <input id="yes" type="radio" name="answer21" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer21" value="No" required>
+                        <label for="no">No</label>
+                        <br>
+                        <span> <i>Nominee Director - A director with no decision making rights, these are held by the individual which they representNominee Shareholder - Registered owner holding on behalf of the actual owner under specific separate legal agreement</i></span>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="submit" class="prev-button" onclick="location.href='./PPOB-client.html'">Prev</button>
+                        <button type="submit" class="next-button" onclick="location.href='./ownerInfo-Client.html'">Next</button>
+                    </div>
+                </form>                
+            </div>
+        </main>
+</body>
+</html>
+

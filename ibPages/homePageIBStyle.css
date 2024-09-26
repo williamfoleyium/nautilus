@@ -28,7 +28,14 @@ section {
     padding-bottom: 4vh;
 }
 
+h1, h2, h3, h4, p, label{
+    color: #4A4A68;
+  }
 
+  p {
+    font-weight: 400;
+    font-size: 20px;
+  }
 
 /* MAIN CONTENT */
 
@@ -39,7 +46,7 @@ section {
   }
 
   .title-message {
-    color: #000;
+    color: #4A4A68;
     align-self: flex-start;
     font-size: 3rem;
     margin-top: 3rem;
@@ -57,10 +64,11 @@ section {
       display: flex;
       gap: 2rem;
       margin-bottom: 3rem;
-      background-color: #e1da9e;
+      background-color: white;
       flex-direction: column;
       padding: 2rem;
       border-radius: 3rem;
+      border: 0.5rem solid #5B1654;
   }
 
 .request-title {

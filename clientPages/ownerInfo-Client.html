@@ -13,7 +13,7 @@
         <nav class="sidebar">
             <div class="nav-bar-container">
                 <div class="logo-container">
-                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-2.png" alt="Logo"></a>
                 </div>
                 <div>
                     <ul class="site-links">
@@ -28,6 +28,8 @@
                         <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
                         <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
                         <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                        <li><a href="#" class="nav-item">Current Onboards</a></li>
+                        <li><a href="../onboardingForms/kycForm/kycForm-ClientInfo.html" class="nav-subitem">UBS</a></li>
                     </ul>
                 </div>
                 <!-- New container for footer items -->
@@ -45,6 +47,7 @@
                 <h1 class="entity-info-title">Entity Info</h1>
                 <h2 class="sub-section-title">Ownership Info</h2>
                 <form class="entity-info-form">
+
                   <label for="firstName" class="name-label">First Name</label>
                   <input type="text" id="firstName" class="name-input" required aria-label="First Name"/>
 
@@ -53,40 +56,42 @@
 
                   <label for="lastName" class="name-label">Last Name</label>
                   <input type="text" id="lastName" class="name-input" required aria-label="city"/>
+                
+                    <section class="identification-section">
+                        <h3>Identification</h3>
+                        <div class="upload-container">
+                            <div class="upload-docs-container">
+                                <div class="text-column">
+                                    <h4 class="upload-title">Upload</h4>
+                                    <p class="upload-description">PDF, JPEG, or PNG</p>
+                                </div>
+                                <div class="image-column">
+                                    <img src="../resources/upload.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="upload-photos-container">
+                                <div class="text-column">
+                                    <h4 class="photo-title">Photo</h4>
+                                    <p class="photo-description">Link and upload directly from your phone camera</p>
+                                </div>
+                                <div class="image-column">
+                                    <img src="../resources/Camera.svg" alt="Camera Logo">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="action-container">
+                            <button class="add-owner-button">
+                                <img src="../resources/Add_round_fill.svg" alt="Pluss Icon">
+                                <span>ADD OWNER</span>
+                            </button>
+                        </div>
+                    </section>
+
+                    <div class="button-container">
+                        <button type="submit" class="prev-button" onclick="window.location.href='./coi-client.html'">Prev</button>
+                        <button type="submit" class="next-button" onclick="window.location.href='./regQuestions-client.html'">Next</button>
+                    </div> 
                 </form>
-            </div>
-            <section class="identification-section">
-                <h3>Identification</h3>
-                <div class="upload-container">
-                    <div class="upload-docs-container">
-                        <div class="text-column">
-                            <h4 class="upload-title">Upload</h4>
-                            <p class="upload-description">PDF, JPEG, or PNG</p>
-                        </div>
-                        <div class="image-column">
-                            <img src="../resources/upload.svg" alt="">
-                        </div>
-                    </div>
-                    <div class="upload-photos-container">
-                        <div class="text-column">
-                            <h4 class="photo-title">Photo</h4>
-                            <p class="photo-description">Link and upload directly from your phone camera</p>
-                        </div>
-                        <div class="image-column">
-                            <img src="../resources/Camera.svg" alt="Camera Logo">
-                        </div>
-                    </div>
-                </div>
-                <div class="action-container">
-                    <button class="add-owner-button">
-                        <img src="../resources/Add_round_fill.svg" alt="Pluss Icon">
-                        <span>ADD OWNER</span>
-                    </button>
-                </div>
-            </section>
-            <div class="button-container">
-                <button type="submit" class="prev-button" onclick="location.href='./coi-client.html'">Prev</button>
-                <button type="submit" class="next-button" onclick="location.href='./regQuestions-client.html'">Next</button>
             </div>
         </main>
     </div>

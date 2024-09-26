@@ -13,7 +13,7 @@
         <nav class="sidebar">
             <div class="nav-bar-container">
                 <div class="logo-container">
-                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-2.png" alt="Logo"></a>
                 </div>
                 <div>
                     <ul class="site-links">
@@ -28,6 +28,8 @@
                         <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
                         <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
                         <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                        <li><a href="#" class="nav-item">Current Onboards</a></li>
+                        <li><a href="../onboardingForms/kycForm/kycForm-ClientInfo.html" class="nav-subitem">UBS</a></li>
                     </ul>
                 </div>
                 <!-- New container for footer items -->
@@ -45,7 +47,7 @@
             <div class="entity-info-container">
                 <h1 class="entity-info-title">Entity Info</h1>
                 <h2 class="sub-section-title">Country of Incorporation</h2>
-                <form class="entity-info-form">
+                <form action="" class="entity-info-form">
                   <label for="addressLine1" class="name-label">Address Line 1</label>
                   <input type="text" id="addressLine1" class="name-input" aria-label="Address Line 1"/>
 
@@ -60,11 +62,12 @@
                   
                   <label for="country" class="name-label">Country</label>
                   <input type="text" id="country" class="name-input" aria-label="country"/>
-                </form>
-                <div class="button-container">
-                    <button type="submit" class="prev-button" onclick="location.href='./PPOB-client.html'">Prev</button>
-                    <button type="submit" class="next-button" onclick="location.href='./ownerInfo-Client.html'">Next</button>
-                </div>
+
+                    <div class="button-container">
+                        <button type="button" class="prev-button" onclick="window.location.href='./PPOB-client.html'">Prev</button>
+                        <button type="button" class="next-button" onclick="window.location.href='./ownerInfo-Client.html'">Next</button>
+                    </div>
+                </form>                
             </div>
         </main>
 </body>

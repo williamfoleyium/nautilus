@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautilus Home Page</title>
+    <link rel="stylesheet" href="../formStyle.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="../../clientPages/navStyle.css">
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="sidebar">
+            <div class="nav-bar-container">
+                <div class="logo-container">
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                </div>
+                <div>
+                    <ul class="site-links">
+                        <li><a href="./entityProfile.html" class="nav-item">Entity Profile</a></li>
+                        <li><a href="./entityName-client.html" class="nav-subitem">Entity Name</a></li>
+                        <li><a href="./PPOB-client.html" class="nav-subitem">PPOB</a></li>
+                        <li><a href="./coi-client.html" class="nav-subitem">COI</a></li>
+                        <li><a href="./ownerInfo-Client.html" class="nav-subitem">Ownership Info</a></li>
+                        <li><a href="./regQuestions-client.html" class="nav-subitem">Regulatory Questions</a></li>
+                        <li><a href="./docVaultHome.html" class="nav-item">Document Vault</a></li>
+                        <li><a href="./docVaultFormation-client.html" class="nav-subitem">Formation Documents</a></li>
+                        <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
+                        <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
+                        <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                    </ul>
+                </div>
+                <footer class="sidebar-footer">
+                    <ul>
+                        <li><a href="#" class="nav-footer-item">Account</a></li>
+                        <li><a href="#" class="nav-footer-item">Sign Out</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </nav>
+    </div>
+    <main class="main-content">
+        <div class="entity-info-container">
+            <section>
+                <h1 class="entity-info-title">KYC Form</h1>
+            <h3>Principal + US & UK + High Risk</h3>
+            <form action="#" class="entity-info-form" method="GET">
+                <div class="section-title">
+                    <h2 class="sub-section-title">Client Information</h2>
+                </div>
+                
+                <div class="kyc-section">
+                    <h3>Client Business Activity</h3>
+                    <br> 
+                    <div class="question">
+                        <label for="message">Provide a detailed description of the primary business activity in which the client is engaged.:</label>
+                        <br>
+                        <textarea id="message" name="message" rows="8" cols="40" required></textarea>
+                        <br>
+                        <p>**if entity is a holding company, please also provide if it is an operating company (one that carries out a commercial activity or provides a service, or which is the holding company of such a company )</p>
+                    </div>
+                    <hr>
+                    <div class="question">
+                        <label>Please confirm if the client is any of the following:</label>
+                        <br>
+                        <label for="bank">Bank/Bank Branch</label>
+                        <input value="bank" type="checkbox" name="boxes" required>
+                        <br>
+                        <label for="supernational">Supernational</label>
+                        <input value="supernational" type="checkbox" name="boxes" required>
+                        <br>
+                        <label for="pic">Personal Investment Company</label>
+                        <input value="pic" type="checkbox" name="boxes" required>
+                        <br>
+                        <label for="spac">Special Purpose Acquisition Company</label>
+                        <input value="spac" type="checkbox" name="boxes" required>
+                        <br>    
+                        <label for="na">N/A</label>
+                        <input value="na" type="checkbox" name="boxes" required>
+                    </div>                       
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="prev-button" onclick="location.href='./PPOB-client.html'">Prev</button>
+                    <button type="submit" class="next-button" onclick="location.href='./ownerInfo-Client.html'">Next</button>
+                </div>
+            </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+

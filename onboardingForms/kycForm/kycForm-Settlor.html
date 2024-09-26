@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautilus Home Page</title>
+    <link rel="stylesheet" href="../formStyle.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="../../clientPages/navStyle.css">
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="sidebar">
+            <div class="nav-bar-container">
+                <div class="logo-container">
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                </div>
+                <div>
+                    <ul class="site-links">
+                        <li><a href="./entityProfile.html" class="nav-item">Entity Profile</a></li>
+                        <li><a href="./entityName-client.html" class="nav-subitem">Entity Name</a></li>
+                        <li><a href="./PPOB-client.html" class="nav-subitem">PPOB</a></li>
+                        <li><a href="./coi-client.html" class="nav-subitem">COI</a></li>
+                        <li><a href="./ownerInfo-Client.html" class="nav-subitem">Ownership Info</a></li>
+                        <li><a href="./regQuestions-client.html" class="nav-subitem">Regulatory Questions</a></li>
+                        <li><a href="./docVaultHome.html" class="nav-item">Document Vault</a></li>
+                        <li><a href="./docVaultFormation-client.html" class="nav-subitem">Formation Documents</a></li>
+                        <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
+                        <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
+                        <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                    </ul>
+                </div>
+                <footer class="sidebar-footer">
+                    <ul>
+                        <li><a href="#" class="nav-footer-item">Account</a></li>
+                        <li><a href="#" class="nav-footer-item">Sign Out</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </nav>
+    </div>
+    <main class="main-content">
+        <div class="entity-info-container">
+            <section>
+                <h1 class="entity-info-title">KYC Form</h1>
+            <h3>Principal + US & UK + High Risk</h3>
+            <form action="#" class="entity-info-form" method="GET">
+                <div class="section-title">
+                    <h2 class="sub-section-title">Settlor/Grantor/Foundes(s)</h2>
+                </div>
+                
+                <div class="kyc-section">
+                    <h3>Physical Transport</h3>
+                    <br>
+                    <div class="question">
+                        <label>Settlor/Grantor/Founder - the Natural person/entity who set up and contributed assets into the entity</label>
+                        <br>
+                        <span>- Is the Settlor/Grantor/Founder a</span>
+                        <br>
+                        <input id="natrualperson" type="radio" name="answer16" value="natrualperson" required>
+                        <label for="natrualperson">Natural Person/Family</label>
+                        <br>
+                        <input id="entity" type="radio" name="answer16" value="entity" required>
+                        <label for="entity">Entity</label>
+                        <br>
+                        <table id="myTable">
+                            <thead>
+                                <tr>
+                                    <th>Entity Name</th>
+                                    <th>Country of Incorporation</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" name="entityName" placeholder="Enter Entity Name" /></td>
+                                    <td><input type="text" name="countryOfIncorporation" placeholder="Enter Country" /></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button id="addRowButton">Add Row</button>
+                        
+                        <script>
+                            document.getElementById('addRowButton').addEventListener('click', function () {
+                                const tableBody = document.querySelector('#myTable tbody');
+                                const newRow = document.createElement('tr');
+                        
+                                // Creating new cells with inputs
+                                newRow.innerHTML = `
+                                    <td><input type="text" name="entityName" placeholder="Enter Entity Name" /></td>
+                                    <td><input type="text" name="countryOfIncorporation" placeholder="Enter Country" /></td>
+                                `;
+                        
+                                // Append the new row to the table body
+                                tableBody.appendChild(newRow);
+                            });
+                        </script>
+                        <hr>
+                        <br>
+                        <label>- Confirm no other contributions to the Trusts Assets (i.e. from a 3rd party)</label>
+                        <br>
+                        <input id="confirmed" type="radio" name="answer17" value="confirmed" required>
+                        <label for="confirmed">Confirmed</label>
+                        <br>
+                        <input id="further-assets" type="radio" name="answer17" value="further-assets" required>
+                        <label for="further-assets">Further Assets Provided</label>
+                    </div>
+                    
+                <div class="button-container">
+                    <button type="submit" class="prev-button" onclick="location.href='./PPOB-client.html'">Prev</button>
+                    <button type="submit" class="next-button" onclick="location.href='./ownerInfo-Client.html'">Next</button>
+                </div>
+            </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+

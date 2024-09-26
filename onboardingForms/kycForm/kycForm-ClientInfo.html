@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautilus Home Page</title>
+    <link rel="stylesheet" href="../formStyle.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="../../clientPages/navStyle.css">
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="sidebar">
+            <div class="nav-bar-container">
+                <div class="logo-container">
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                </div>
+                <div>
+                    <ul class="site-links">
+                        <li><a href="./entityProfile.html" class="nav-item">Entity Profile</a></li>
+                        <li><a href="./entityName-client.html" class="nav-subitem">Entity Name</a></li>
+                        <li><a href="./PPOB-client.html" class="nav-subitem">PPOB</a></li>
+                        <li><a href="./coi-client.html" class="nav-subitem">COI</a></li>
+                        <li><a href="./ownerInfo-Client.html" class="nav-subitem">Ownership Info</a></li>
+                        <li><a href="./regQuestions-client.html" class="nav-subitem">Regulatory Questions</a></li>
+                        <li><a href="./docVaultHome.html" class="nav-item">Document Vault</a></li>
+                        <li><a href="./docVaultFormation-client.html" class="nav-subitem">Formation Documents</a></li>
+                        <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
+                        <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
+                        <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                    </ul>
+                </div>
+                <footer class="sidebar-footer">
+                    <ul>
+                        <li><a href="#" class="nav-footer-item">Account</a></li>
+                        <li><a href="#" class="nav-footer-item">Sign Out</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </nav>
+    </div>
+    <main class="main-content">
+        <div class="entity-info-container">
+            <section>
+                <h1 class="entity-info-title">KYC Form</h1>
+            <h3>Principal + US & UK + High Risk</h3>
+            <form action="#" class="entity-info-form" method="GET">
+                <div class="section-title">
+                    <h2 class="sub-section-title">Client Information</h2>
+                </div>
+                <div class="kyc-section">
+                    <h3>Client Information</h3>
+                    <div class="question">
+                        <label class="name-label">Entity Type</label>
+                        <br>
+                        <input id="corp" type="radio" name="answer1" value="corp" required>
+                        <label for="corp">Limited Company/Corporation</label>
+                        <br>
+                        <input id="fund" type="radio" name="answer1" value="fund" required>
+                        <label for="fund">Limited Partnerships/Funds</label>
+                        <br>
+                        <input id="partnership" type="radio" name="answer1" value="partnership" required>
+                        <label for="partnership">Partnership</label>
+                        <br>                    
+                        <input id="state-owned-entities" type="radio" name="answer1" value="state-owned-entities" required>
+                        <label for="state-owned-entities">State Owned Entities</label>
+                        <br>
+                        <input id="spv" type="radio" name="answer1" value="spv" required>
+                        <label for="spv">Special Purpose Vehicle</label>
+                        <br>
+                        <input id="trust" type="radio" name="answer1" value="trust" required>
+                        <label for="trust">Trust & Foundation</label>
+                        <br>
+                        <input id="muni" type="radio" name="answer1" value="muni" required>
+                        <label for="muni">Sovereign Government / Municipality</label>
+                    </div>
+                    <hr>
+                    <div class="question">
+                        <label>Is the entity listed on an exchange (or 50.1% or greater owned subsidiary of an entity listed on an exchange)</label>
+                        <br>
+                        <input id="yes" type="radio" name="answer2" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer2" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+                    <hr>
+                    <div class="question">
+                        <label>Is the entity a financial service provider? (or 50.1% or greater owned subsidiary of a financial service provider)</label>
+                        <br>
+                        <input id="yes" type="radio" name="answer3" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer3" value="No" required>
+                        <label for="no">No</label>
+                    </div> 
+                </div>
+                <div class="button-container">
+                    <button type="submit" class="prev-button" onclick="location.href='./PPOB-client.html'">Prev</button>
+                    <button type="submit" class="next-button" onclick="location.href='./ownerInfo-Client.html'">Next</button>
+                </div>
+            </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -20,8 +20,8 @@ section {
     padding-bottom: 4vh;
 }
 
-p {
-  color: black;
+h1, h2, h3, p {
+  color: #4A4A68;
 }
 
 /* TRANSITION */
@@ -47,7 +47,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   height: 20vh;
-  background-color: #F3F2E9;
+  background-color: #f5f5f5;
 }
 
 .nav-links {
@@ -58,16 +58,16 @@ nav {
 }
 
 a {
-  color: black;
+  color: #4A4A68;
   text-decoration: none;
   text-decoration-color: white;
 }
 
 a:hover {
-  color: #DAA520;
+  color: #4B4DED;
   text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: #FFD700;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: #4B4DED;
 }
 
 .logo {
@@ -85,7 +85,7 @@ a:hover {
   margin: auto;
   font-size: 4rem;
   text-align: left;
-
+  color: #4A4A68;
 }
 
 .btn-container {
@@ -105,13 +105,13 @@ a:hover {
 
 .demo-btn{
   font-size: 1rem;
-  color: #856A35;
+  color: #5B1654;
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
   border-radius: 1.5rem;
-  border: #e1da9e 0.2rem solid;
-  background: #E1DA9E;
+  border: #5B1654 0.2rem solid;
+  background: #5B1654;
 }
 
 .demo-btn:hover {
@@ -121,21 +121,34 @@ a:hover {
 .sign-in-button {
     font-weight: 600;
     font-size: 1rem;
-    color: #B38F48;
+    color: #5B1654;
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 1.5rem;
-    border: #e1da9e 0.2rem solid;
+    border: #5B1654 0.2rem solid;
     background: white;
   }
   
   .sign-in-button:hover {
-    cursor:pointer
+    cursor:pointer;
+    background-color: white;
+    color: #005DA1;
+    border: #005DA1 0.2rem solid;
   }
 
 
 /* HAMBURGER MENU */
+
+/* For images inside sections */
+section img {
+  width: 500px;  /* Image will take up the full width of the .pic-container */
+  height: auto;  /* Maintains the image aspect ratio */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
 
 /* HERO */
 #hero {
@@ -144,8 +157,16 @@ a:hover {
     align-items: center; /* Centers horizontally */
     height: 100%; /* Ensures the container takes up the full height */
     gap: 3rem;
+    padding: 1rem;
   }
   
+#hero img {
+    border-radius: 1rem;
+    border: #5B1654 0.1rem solid;
+    margin-right: 3rem;
+
+}
+
   .left-container {
     display: flex;
     justify-content: center;
@@ -166,44 +187,58 @@ a:hover {
     margin-bottom: 2rem;
   }
   
-  .pic-containter {
+  .pic-container {
+    width: 50%; /* Now it will take up 50% of the section width */
     display: flex;
-    height: 500px;
-    width: 500px;
+    justify-content: center; /* Centers the image within the container */
+}
 
-  }
+
+  /* .pic-containter {
+    display: flex;
+    height: 600px;
+    width: 600px;
+
+  } */
   
   .contact-btn {
     font-weight: 600;
     font-size: 1rem;
-    color: #B38F48;
+    color: white;
     transition: all 300ms ease;
     padding: 1rem;
     width: 8rem;
     border-radius: 1.5rem;
-    border: #e1da9e 0.2rem solid;
-    background: white;
+    border: #5B1654 0.2rem solid;
+    background: #5B1654;
     gap: 2rem;
   }
   
   .contact-btn:hover {
-    cursor:pointer
+    cursor: pointer;
+    background-color: #005DA1;
+    color: white;
+    border: #005DA1 0.2rem solid;
   }
   
+
+
+
   /* HNW */
   
   #hnw {
     display: flex;
     justify-content: center;
     /*height: 80 vh;*/
-    background-color: #FAF9F5;
+    background-color: #f5f5f5;
     gap: 3rem;
+    padding: 2rem;
   }
     
 
   .body-image {
     border-radius: 1rem;
-    border: #E1DA9E 0.1rem solid;
+    border: #5B1654 0.1rem solid;
   }
 
 /* HEDGE FUND SECTION */
@@ -213,6 +248,8 @@ a:hover {
     justify-content: center;
     margin: 1rem;
     gap: 1rem;
+  
+    padding: 2rem;
   }
   
 
@@ -245,7 +282,8 @@ a:hover {
 #investment-banks {
     display: flex;
     justify-content: center;
-    background-color: #FAF9F5;
+    background-color: #f5f5f5;
+    padding: 2rem;
     gap: 3rem;
 }
 
@@ -265,7 +303,7 @@ a:hover {
   }
   
   .highlight {
-    color: #B38F48;
+    color: #5B1654;
   }
   
   #sign-up {
@@ -288,10 +326,10 @@ a:hover {
       flex: 1;
       background: white;
       border-radius: 2rem;
-      border: #8C8C8C 0.1rem solid;
-      border-color: #8C8C8C;
+      border: #e8e8e8 0.1rem solid;
+      border-color: #5B1654;
       text-align: center;
-      color: #8C8C8C;
+      color: #4A4A68;
   }
   
   .client-title {
@@ -303,10 +341,10 @@ a:hover {
   .investment-bank-box {
     padding: 2rem;
     flex: 1;
-    background: #E1DA9E;
+    background: white;
     border-radius: 2rem;
-    border: #E1DA9E 0.1rem solid;
-    border-color: #E1DA9E;
+    border: #5B1654 0.1rem solid;
+    border-color: #5B1654;
     text-align: center;
   }
   
@@ -319,12 +357,12 @@ a:hover {
     justify-content: center;
     font-weight: 600;
     font-size: 2rem;
-    color: #5A5A5A;
+    color: #5B1654;
     transition: all 300ms ease;
     padding: 1rem;
     width: 15rem;
     border-radius: 1.5rem;
-    border: #e1da9e 0.2rem solid;
+    border: #5B1654 0.2rem solid;
     background: white;
   }
   
@@ -332,30 +370,33 @@ a:hover {
     justify-content: center;
     font-weight: 600;
     font-size: 2rem;
-    color: #4A493F;
+    color: #5B1654;
     transition: all 300ms ease;
     padding: 1rem;
     width: 15rem;
     border-radius: 1.5rem;
-    border: #4A493F 0.2rem solid;
-    background: #e1da9e;
+    border: #5B1654 0.2rem solid;
+    background: white;
   }
     
   .client-button:hover {
     cursor:pointer;
-    background-color: #e1da9e;
+    background-color: #005DA1;
+    color: white;
+    border: #005DA1;
   }
   
   .investment-bank-button:hover {
     cursor:pointer;
-    background-color: #4A493F;
-    color:#B38F48;
+    background-color: white;
+    color: #005DA1;
+    border: #005DA1 0.2rem solid;
   }
   
 /* CONTACT SECTION */
 
 #contact-container {
-  background: linear-gradient(#f0f0ce, #fafafa);
+  background: linear-gradient(#e5d2fe, #fafafa);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -406,7 +447,7 @@ a:hover {
 }
 
 .contact-inputs:focus {
-  border: 2px solid #B38F48;
+  border: 2px solid #e5d2fe;
 }
 
 .contact-inputs::placeholder {
@@ -420,12 +461,12 @@ a:hover {
   align-items: center;
   padding: 15px 30px;
   font-size: 16px;
-  color: #4A493F;
+  color: white;
   gap: 10px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  background-color: #e1da9e;
+  background-color: #5B1654;
   font-weight: 600;
 }
 
@@ -436,7 +477,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     padding: 1rem; /* Adjust padding as needed */
-    background-color: #F3F2E9; /* Adjust background color as needed */
+    background-color: #f5f5f5; /* Adjust background color as needed */
 }
 
 .footer-nav-links-container {
@@ -459,5 +500,8 @@ a:hover {
 
 
 .footer-nav-links-container a:hover {
-    color: #DAA520; /* Adjust hover color as needed */
+  color: #4B4DED;
+  text-decoration: underline;
+  text-underline-offset: 0.3rem;
+  text-decoration-color: #4B4DED;
 }

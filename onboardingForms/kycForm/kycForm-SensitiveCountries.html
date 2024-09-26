@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nautilus Home Page</title>
+    <link rel="stylesheet" href="../formStyle.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="../../clientPages/navStyle.css">
+</head>
+<body>
+    <div class="layout-container">
+        <nav class="sidebar">
+            <div class="nav-bar-container">
+                <div class="logo-container">
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                </div>
+                <div>
+                    <ul class="site-links">
+                        <li><a href="./entityProfile.html" class="nav-item">Entity Profile</a></li>
+                        <li><a href="./entityName-client.html" class="nav-subitem">Entity Name</a></li>
+                        <li><a href="./PPOB-client.html" class="nav-subitem">PPOB</a></li>
+                        <li><a href="./coi-client.html" class="nav-subitem">COI</a></li>
+                        <li><a href="./ownerInfo-Client.html" class="nav-subitem">Ownership Info</a></li>
+                        <li><a href="./regQuestions-client.html" class="nav-subitem">Regulatory Questions</a></li>
+                        <li><a href="./docVaultHome.html" class="nav-item">Document Vault</a></li>
+                        <li><a href="./docVaultFormation-client.html" class="nav-subitem">Formation Documents</a></li>
+                        <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
+                        <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
+                        <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                    </ul>
+                </div>
+                <footer class="sidebar-footer">
+                    <ul>
+                        <li><a href="#" class="nav-footer-item">Account</a></li>
+                        <li><a href="#" class="nav-footer-item">Sign Out</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </nav>
+    </div>
+    <main class="main-content">
+        <div class="entity-info-container">
+            <section>
+                <h1 class="entity-info-title">KYC Form</h1>
+            <h3>Principal + US & UK + High Risk</h3>
+            <form action="#" class="entity-info-form" method="GET">
+                <div class="section-title">
+                    <h2 class="sub-section-title">Sanctions and Vulnerable Business Activites </h2>
+                </div>
+                
+                <div class="kyc-section">
+                    <h3>Sensitive Countries</h3>
+                    <br>
+                    <div class="question">
+                        <label for="client-name">Is</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>and/or any of its connected parties including shareholders, subsidiaries, assets, affiliates (including but not limited to joint venture partners, significant suppliers or agents) or any of its directors or officers: a. an individual or entity that is, or is owned or controlled by one or more individual or entity that is, currently the subject or target of any sanctions (including sectoral sanctions) administrated or enforced by the UN Security Council, EU, US, Switzerland, or UK governments or located, organised, or resident in, or an agency or instrumentality of the government of, a country or territory that is the subject of comprehensive sanctions (currently Cuba, Iran, North Korea, Syria and the Donetsk, Lugansk Zaporizhzhia, Kherson and Crimea regions of Ukraine?) b. engaged in, previously engaged within the last 12 months, or have unfunded commitments to engage, in any dealings/ transactions with any individual or entity that is, or is owned or controlled by one or more individual or entity that is, currently subject to any sanctions or a country or territory that is the subject of comprehensive sanctions (currently Cuba, Iran, North Korea,Syria and the Donetsk, Lugansk, Zaporizhzhia, Kherson and Crimea region of Ukraine)?</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer9" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer9" value="No" required>
+                        <label for="no">No - If 3rd Party funding is going to be used; please provide details of the 3rd party (name and country)</label>                     
+                    </div>
+                    <hr>
+                    <div class="question">
+                        <label for="client-name">Is</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>and/or any of it its connected parties: a. located, organised, or resident in Afghanistan, Belarus, Democratic Republic of Congo; Palestinian Territories;Libya; Myanmar; Nicaragua; Russia; South Sudan; Sudan; Venezuela; Yemen; Zimbabwe? b. an agency, instrumentality or acting on behalf (in official capacity) of, or owned or controlled by, the government of Afghanistan, Belarus, Democratic Republic of Congo; Palestinian Territories; Libya; Myanmar; Nicaragua; Russia; South Sudan; Sudan; Venezuela; Yemen; Zimbabwe? c. conducting business with or behalf of public officials or government of Afghanistan, Belarus; Democratic Republic of Congo; Palestinian Territories; Libya; Myanmar; Nicaragua; Russia; South Sudan; Sudan; Venezuela; Yemen; Zimbabwe</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer10" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer10" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+                    <hr>
+                    <div class="question">
+                        <label for="client-name">Does</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>or any of its group companies have direct or indirect exposure to: a. Russian or Belarussian Sectoral Sanctions affected entities b. Russian energy(including energy pipeline construction), military, defence or intelligence sectors; c. Belarussian potassium chloride (potash), energy (including petrochemical and petroleum products), tobacco, aviation, cargo handling services, construction, athletics, technology for communications, defence or security sectors; d. Belarussian state-owned or controlled companies, including majority state-owned credit or financial institutions; e. Defence, Arms, War Materials, interception and monitoring goods and technology or Dual-use goods (includes manufacture or distribution of goods, services or technology with a military application, dealers and intermediaries involved).</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer11" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer11" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+                    <hr>
+                    <div class="question">
+                        <label for="client-name">Is</label>
+                        <input id="client-name" type="text" name="client-name" required>
+                        <br>
+                        <span>or any of the Group Companies (including parent, subsidiaries, JV and other members of the group) has been subject to an enforcement action under US, UN, EU, UK, or CH sanctions regulations or has made a disclosure or reported any sanctions related issues to a regulatory agency in the last 12 months?</span>
+                        <br>
+                        <input id="yes" type="radio" name="answer12" value="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input id="no" type="radio" name="answer12" value="No" required>
+                        <label for="no">No</label>
+                    </div>
+                    
+                <div class="button-container">
+                    <button type="submit" class="prev-button" onclick="location.href='./PPOB-client.html'">Prev</button>
+                    <button type="submit" class="next-button" onclick="location.href='./ownerInfo-Client.html'">Next</button>
+                </div>
+            </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
+
+
+
+
+
+
+

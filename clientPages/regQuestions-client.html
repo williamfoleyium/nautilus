@@ -14,7 +14,7 @@
         <nav class="sidebar">
             <div class="nav-bar-container">
                 <div class="logo-container">
-                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-alt.png" alt="Logo"></a>
+                    <a href="./homePage-client.html"><img src="../resources/nautilus-logo-2.png" alt="Logo"></a>
                 </div>
                 <div>
                     <ul class="site-links">
@@ -29,6 +29,8 @@
                         <li><a href="./docVaultReg-client.html" class="nav-subitem">Regulatory Documents</a></li>
                         <li><a href="./docVaultTax-client.html" class="nav-subitem">Tax Documents</a></li>
                         <li><a href="./docVaultFin-client.html" class="nav-subitem">Financial Documents</a></li>
+                        <li><a href="#" class="nav-item">Current Onboards</a></li>
+                        <li><a href="../onboardingForms/kycForm/kycForm-ClientInfo.html" class="nav-subitem">UBS</a></li>
                     </ul>
                 </div>
                 <!-- New container for footer items -->
@@ -46,43 +48,49 @@
                 <h1 class="entity-info-title">Entity Info</h1>
                 <h2 class="sub-section-title">Regulatory Adherences</h2>
                 <div class="reg-question-section">
-                    <div class="reg-section-container">
-                        <div class="question">
-                            <div class="reg-text">
-                                <p>US Person CFTC 2013 Status</p>
+                    <form action="" class="entity-info-form">
+                        <div class="reg-section-container">
+                            <div class="question">
+                                <div class="reg-text">
+                                    <p>US Person CFTC 2013 Status</p>
+                                </div>
+                                <div class="reg-answers">
+                                    <input id="yes" type="radio" name="answer" value="Yes" required>
+                                    <label for="yes">Yes</label>
+                                    <input id="no" type="radio" name="answer" value="No" required>
+                                    <label for="no">No</label>
+                                    <!-- <button class="btn">YES</button>
+                                    <button class="btn">NO</button> -->
+                                </div>
                             </div>
-                            <div class="reg-answers">
-                                <button class="btn">YES</button>
-                                <button class="btn">NO</button>
+                            <div class="question">
+                                <div class="reg-text">
+                                    <p>US Person CFTC 2020 Status</p>
+                                </div>
+                                <div class="reg-answers">
+                                    <button class="btn">YES</button>
+                                    <button class="btn">NO</button>
+                                </div>
+                            </div>
+                            <div class="question">
+                                <div class="reg-text">
+                                    <p>Are you considered a US Federal Entity?</p>
+                                </div>
+                                <div class="reg-answers">
+                                    <button class="btn">YES</button>
+                                    <button class="btn">NO</button>
+                                </div>
                             </div>
                         </div>
-                        <div class="question">
-                            <div class="reg-text">
-                                <p>US Person CFTC 2020 Status</p>
-                            </div>
-                            <div class="reg-answers">
-                                <button class="btn">YES</button>
-                                <button class="btn">NO</button>
-                            </div>
-                        </div>
-                        <div class="question">
-                            <div class="reg-text">
-                                <p>Are you considered a US Federal Entity?</p>
-                            </div>
-                            <div class="reg-answers">
-                                <button class="btn">YES</button>
-                                <button class="btn">NO</button>
-                            </div>
-                        </div>
-                    </div>
+                    </form>                   
                 </div>
                 <div class="button-container">
-                    <button type="submit" class="prev-button" onclick="location.href='./ownerInfo-Client.html'">Prev</button>
-                    <button type="submit" class="next-button" onclick="location.href='./entityProfile.html'">Next</button>
+                    <button type="submit" class="prev-button" onclick="window.location.href='./ownerInfo-Client.html'">Prev</button>
+                    <button type="submit" class="next-button" onclick="window.location.href='./entityProfile.html'">Next</button>
                 </div>
               </div>
         </main>
-    </div>
+    </div>    
 </body>
 </html>
 
